@@ -9,7 +9,6 @@
     align-items: center;
     gap: 2vw;
     padding-block: 4vw;
-    border: 1px solid black;
     box-sizing: border-box;
     overflow: hidden;
 }
