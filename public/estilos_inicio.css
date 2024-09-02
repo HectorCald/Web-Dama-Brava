@@ -9,6 +9,9 @@
     align-items: center;
     gap: 2vw;
     padding-block: 4vw;
+    border: 1px solid black;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .inicio .texto {
@@ -40,8 +43,8 @@
 }
 
 .inicio img {
-    height: 450px;
-    width: 500px;
+    height: 350px;
+    width: 400px;
     box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5);
 }
 

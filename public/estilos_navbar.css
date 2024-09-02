@@ -1,12 +1,7 @@
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    width: 100%;
 }
 .barraNavegacion{
     position: fixed;
