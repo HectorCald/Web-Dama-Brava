@@ -1,0 +1,94 @@
+.seccionProductos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 60px 5vw;
+}
+.tituloProductos, .tituloRecetas, .tituloNosotros{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(60, 60, 60);
+    padding-block: 20px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.seccionProductos .buscador{
+    width: 100%;
+    padding-inline: 20px;
+}
+.buscador h1{
+    margin: 0;
+}
+.buscador input{
+    margin-block: 15px;
+    margin-left: 5px;
+}
+.buscador .filtros a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+}
+.infoProductos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-block: 20px;
+    gap: 5vw;
+}
+.infoProductos .carrusel{
+    border: 1px solid rgb(112, 112, 112);
+    height: 380px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 10px;
+}
+.infoProductos .carrusel img{
+    width: 300px;
+    height: 300px;
+}
+.elementos{
+    border: 1px solid rgb(113, 113, 113);
+    height: 160px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    white-space: nowrap;
+}
+.producto{
+    width: 200px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 10px;
+    background-color: rgb(216, 216, 216);
+    margin-right: 10px;
+}
+.producto img{
+    width: 100px;
+    height: 100px;
+}
+.producto p{
+    margin:5px;
+    font-size: 14px;
+}

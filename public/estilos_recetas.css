@@ -1,0 +1,39 @@
+.seccionRecetas{
+    width: 100%;
+    padding: 70px 3vw;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.recetas{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+}
+.cuadroReceta{
+    display: flex;
+    border: 1px solid black;
+    width: 340px;
+    height: 150px;
+}
+.cuadroReceta img{
+    width: 150px;
+    height: 150px;
+}
+.textoReceta{
+    padding: 10px;
+}
+.textoReceta h1{
+    margin: 0;
+    font-size: 20px;
+}
+.textoReceta p{
+    margin: 0;
+    font-size: 15px;
+}
+.textoReceta button{
+    margin-top: 10px;
+}
+
