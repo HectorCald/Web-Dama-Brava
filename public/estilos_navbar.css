@@ -2,6 +2,8 @@ body{
     box-sizing: border-box;
     overflow-x: hidden;
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 .barraNavegacion{
     position: fixed;
