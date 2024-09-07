@@ -12,29 +12,36 @@
     <link rel="stylesheet" href="./public/estilos_contacto.css">
 </head>
 <body>
+    <div class="whatsapp">
+        <button class="botonWhatsapp"><img src="./public/Imagenes/Icon-Whatsapp.png" alt=""></button>
+    </div>
     <div class="barraNavegacion">
-        <img src="./public/Imagenes/Logo Dama Brava.jpeg" alt="" class="logoEmpresa">
-        <div class="menu">
-            <a href="" class="link">Inicioo</a>
+        <div class="nombrelogo">
+            <img src="./public/Imagenes/Logo Dama Brava2.jpg" alt="" class="logoEmpresa">
+            <h1>Dama Brava</h1>
+        </div>
+        <div class="menu mostrar">
+            <a href="" class="link">Inicio</a>
             <a href="" class="link">Productos</a>
             <a href="" class="link">Recetas</a>
             <a href="" class="link">Nosotros</a>
-            <button class="contacto botones">CONTACTO</button>
+            <button class="botonContacto botones" id="hh" onclick="contacto()">Contacto</button>
         </div>
+        <button class="botonMenu" onclick="menu()">
+            <img class="botonImagen" src="./public/Imagenes/menu_close.png" alt="">
+        </button>
     </div>
 
     <div class="inicio">
-        <img src="./public/Imagenes/Imagen Principal.jpeg" alt="" class="imagenPrincipal">
         <div class="texto">
             <h1>"Da sabor a la vida con nuestros condimentos. ¡Descubre el secreto detrás de cada delicioso plato!"</h1>
             <p>Más de 50 productos condimentos, ajíes, especias y hierbas aromáticas. </p>
-            <button class="botones">CATALOGO</button>
-            <button class="botones">CONTACTO</button>
+            <div class="botonesInicio">
+                <button class="botones">CATALOGO</button>
+                <button class="botones">CONTACTO</button>
+            </div>
         </div>
-        
     </div>
-
-
     <h1 class="tituloProductos">PRODUCTOS</h1>
     <div class="seccionProductos">
         <div class="buscador">
@@ -50,53 +57,53 @@
         </div>
         <div class="infoProductos">
             <div class="carrusel">
-                <img src="" alt="">
+                <img src="./public/Imagenes/Producto4.png" alt="">
                 <div class="botonesCarrusel">
-                    <button class="botones">anterior</button>
-                    <button class="botones">siguiente</button>
+                    <button class="botones">ANTERIOR</button>
+                    <button class="botones">SIGUIENTE</button>
                 </div>
             </div>
             <div class="textoInfo">
-                <h1>Nombre del productos</h1>
-                <p>informacion del productos y demas </p>
+                <h1>AJI AMARILLO</h1>
+                <p>informacion del productos y demas un poco de teroria y historia probablemente</p>
                 <button class="botones">ADQUIRIR</button>
             </div>
         </div>
         <div class="elementos">
             <div class="producto">
-                <img src="" alt="" class="imagenProducto">
+                <img src="./public/Imagenes/Producto 1.png" alt="" class="imagenProducto">
                 <p>AJI AMARILLO</p>
             </div>
             <div class="producto">
-                <img src="" alt="" class="imagenProducto">
+                <img src="./public/Imagenes/Producto2.png" alt="" class="imagenProducto">
                 <p>AJI AMARILLO</p>
             </div>
             <div class="producto">
-                <img src="" alt="" class="imagenProducto">
+                <img src="./public/Imagenes/Producto3.png" alt="" class="imagenProducto">
                 <p>AJI AMARILLO</p>
             </div>
             <div class="producto">
-                <img src="" alt="" class="imagenProducto">
+                <img src="./public/Imagenes/Producto4.png" alt="" class="imagenProducto">
                 <p>AJI AMARILLO</p>
             </div>
             <div class="producto">
-                <img src="" alt="" class="imagenProducto">
+                <img src="./public/Imagenes/Productos/albaca.png" alt="" class="imagenProducto">
                 <p>AJI AMARILLO</p>
             </div>
             <div class="producto">
-                <img src="" alt="" class="imagenProducto">
+                <img src="./public/Imagenes/Productos/Canela.png" alt="" class="imagenProducto">
                 <p>AJI AMARILLO</p>
             </div>
             <div class="producto">
-                <img src="" alt="" class="imagenProducto">
+                <img src="./public/Imagenes/Productos/Coco rallado.png" alt="" class="imagenProducto">
                 <p>AJI AMARILLO</p>
             </div>
             <div class="producto">
-                <img src="" alt="" class="imagenProducto">
+                <img src="./public/Imagenes/Productos/Curcuma.png" alt="" class="imagenProducto">
                 <p>AJI AMARILLO</p>
             </div>
             <div class="producto">
-                <img src="" alt="" class="imagenProducto">
+                <img src="./public/Imagenes/Productos/Linaza.png" alt="" class="imagenProducto">
                 <p>AJI AMARILLO</p>
             </div>
             <div class="producto">
@@ -228,6 +235,56 @@
         </div>
     </div>
 
+    <div class="bandera">
+        <div class="rojo color"></div>
+        <div class="amarillo color"></div>
+        <div class="verde color"></div>
+    </div>
+    <div class="contactos">
+        <div class="redesSociales">
+            <h1>Contacto</h1>
+            <div class="red">
+                <img src="./public/Imagenes/Icon-facebook.png" alt="" class="logoRedes">
+                <div class="textoRedes">
+                    <h1>Facebook</h1>
+                    <a href="">@damabrava</a>
+                </div>
+            </div>
+            <div class="red">
+                <img src="./public/Imagenes/Icon-youtube.png" alt="" class="logoRedes">
+                <div class="textoRedes">
+                    <h1>Youtube</h1>
+                    <a href="">@damabrava</a>
+                </div>
+            </div>
+            <div class="red">
+                <img src="./public/Imagenes/Icon-instagram.png" alt="" class="logoRedes">
+                <div class="textoRedes">
+                    <h1>Instagram</h1>
+                    <a href="">@damabrava</a>
+                </div>
+            </div>
+            <div class="red">
+                <img src="./public/Imagenes/Icon-gmail.png" alt="" class="logoRedes">
+                <div class="textoRedes">
+                    <h1>Correo Electronico</h1>
+                    <a href="">@damabrava</a>
+                </div>
+            </div>
+            <div class="red">
+                <img src="./public/Imagenes/Icon-Whatsapp.png" alt="" class="logoRedes">
+                <div class="textoRedes">
+                    <h1>Whatsapp</h1>
+                    <a href="">@damabrava</a>
+                </div>
+            </div>
+        </div> 
+        <div class="direccion">
+            <h1>Direccion</h1>
+            <p>Planta plazuela Bolivia libre #2, Sucre Bolivia</p>
+            <button class="botones">Ir a google maps</button>
+        </div>
+    </div>
     <script src="./index.js"></script>
 </body>
 </html>

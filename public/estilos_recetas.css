@@ -10,7 +10,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 1vw;
+    gap: 2vw;
     justify-content: center;
     align-items: center;
 }
@@ -18,11 +18,11 @@
     display: flex;
     border: 1px solid black;
     width: 340px;
-    height: 150px;
+    height: auto;
 }
 .cuadroReceta img{
     width: 150px;
-    height: 150px;
+    height: auto;
 }
 .textoReceta{
     padding: 10px;
@@ -33,7 +33,7 @@
 }
 .textoReceta p{
     margin: 0;
-    font-size: 15px;
+    font-size: 13px;
 }
 .textoReceta button{
     margin-top: 10px;

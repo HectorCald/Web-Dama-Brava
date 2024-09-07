@@ -1,0 +1,62 @@
+.contactos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    align-items: top;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-block: 2vw;
+    background-color:  rgb(168, 36, 36);
+    color: white;
+    gap: 5vw;
+}
+.redesSociales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    width: 300px;
+    padding: 20px;
+}
+.redesSociales h1, .direccion h1{
+    margin: 0;
+}
+.textoRedes a{
+    color: white;
+}
+.textoRedes h1{
+    font-size: 20px;
+    margin: 0;
+}
+.red{
+    display: flex;
+    gap: 10px;
+}
+.red img{
+    width: 40px;
+    height: 40px;
+}
+.direccion{
+    width: 300px;
+    padding: 20px;
+}
+.bandera{
+    height: 10px;
+    display: flex;
+}
+.color{
+    height: 10px;
+    width: 100%;
+}
+.rojo{
+    background-color: red;
+}
+.amarillo{
+    background-color: yellow;
+}
+.verde{
+    background-color: green;
+}

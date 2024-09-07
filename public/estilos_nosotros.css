@@ -1,14 +1,13 @@
 .seccionNosotros, .seccionNosotros2, .seccionNosotros3{
     padding-block: 2vw;
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     gap: 5vw;
     width: 100%;
     box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
     margin: 0;
     overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 .historia, .misionvision, .valores{
     width: 100%;
@@ -17,12 +16,16 @@
     flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: center;
-    gap: 20px;
+    gap:5vw;
+    align-items: center;
+    padding: 3vw;
 }
 .misionvision{
+    display: flex;
     color: white;
     flex-direction: row;
     gap: 30px;
+    justify-content: center;
 }
 .textoHistoria{
     padding: 15px;
@@ -31,22 +34,33 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 700px;
+    width: 500px;
     height: auto;
-    gap: 30px;
     box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
     margin-top: 10px;
 }
+.textoHistoria h1{
+    font-family: 'mifuente';
+    margin: 0;
+}
+.textoHistoria p{
+    font-family: 'mifuenteRegular';
+}
+.textoHistoria ul{
+    font-family: 'mifuenteRegular';
+}
 .seccionNosotros img, .seccionNosotros2 img, .seccionNosotros3 img{
     width: 350px;
-    height: 300px;
+    height: 500px;
     box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5);
 }
 .seccionNosotros3 img{
-    width: 400px;
+    width: 450px;
+    height: 350px;
 }
 .seccionNosotros2 img{
-    width: 400px;
+    width: 450px;
+    height: 350px;
 }
 .textoHistoria h1{
     font-size: 50px;
