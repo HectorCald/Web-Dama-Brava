@@ -1,12 +1,12 @@
 @font-face{
     font-family: 'mifuente';
-    src:url('/fonts/MADECarvingSoftPERSONALUSE-Black.otf');
+    src:url('/fonts/MADECarvingSoftPERSONALUSE-Black.ttf');
     font-weight: normal;
     font-style: normal;
 }
 @font-face{
     font-family: 'mifuenteRegular';
-    src:url('/fonts/MADECarvingSoftPERSONALUSE-Light.otf') ;
+    src:url('/fonts/MADECarvingSoftPERSONALUSE-Light.ttf') ;
 }
 body{
     box-sizing: border-box;
@@ -142,7 +142,7 @@ body{
         display: flex;
         width: 40px;
         height: 40px;
-        font-size: 50px;
+        font-size: 0px;
         font-family: 'miFuente';
         justify-content: center;
         align-items: center;
