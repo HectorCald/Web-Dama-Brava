@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
 })
 
 function desabilitaEnlaces(){
-    const enlaces = document.querySelectorAll('a');
+    const enlaces = document.querySelectorAll('.link');
     enlaces.forEach(function(enlace){
         enlace.addEventListener('click', function(event){
             event.preventDefault();

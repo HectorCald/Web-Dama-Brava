@@ -1,12 +1,19 @@
-@font-face{
+@font-face {
     font-family: 'mifuente';
-    src:url('/fonts/MADECarvingSoftPERSONALUSE-Black.ttf');
-    font-weight: normal;
+    src: url('/fonts/MADECarvingSoftPERSONALUSE-Black.woff2') format('woff2'),
+        url('/fonts/MADECarvingSoftPERSONALUSE-Black.woff') format('woff');
+    font-weight: 900;
     font-style: normal;
+    font-display: swap;
 }
-@font-face{
+
+@font-face {
     font-family: 'mifuenteRegular';
-    src:url('/fonts/MADECarvingSoftPERSONALUSE-Light.ttf') ;
+    src: url('/fonts/MADECarvingSoftPERSONALUSE-Light.woff2') format('woff2'),
+        url('/fonts/MADECarvingSoftPERSONALUSE-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 body{
     box-sizing: border-box;

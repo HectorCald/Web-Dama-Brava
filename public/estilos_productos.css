@@ -59,7 +59,7 @@
     width: 300px;
 }
 .textoInfo h1{
-    font-family: 'miFuente';
+    font-family: 'miFuente', sans-serif;
 }
 .textoInfo p{
     font-family: 'miFuenteRegular', sans-serif;
