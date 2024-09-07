@@ -40,14 +40,14 @@
     margin-top: 10px;
 }
 .textoHistoria h1{
-    font-family: 'mifuente';
+    font-family: 'mifuente', sans-serif;
     margin: 0;
 }
 .textoHistoria p{
-    font-family: 'mifuenteRegular';
+    font-family: 'mifuenteRegular', sans-serif;
 }
 .textoHistoria ul{
-    font-family: 'mifuenteRegular';
+    font-family: 'mifuenteRegular', sans-serif;
 }
 .seccionNosotros img, .seccionNosotros2 img, .seccionNosotros3 img{
     width: 350px;

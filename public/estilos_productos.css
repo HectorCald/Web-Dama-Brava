@@ -33,7 +33,7 @@
 .buscador h1{
     margin: 0;
     font-size: 25px;
-    font-family: 'miFuenteRegular';
+    font-family: 'miFuenteRegular', sans-serif;
 }
 .buscador input{
     margin-block: 15px;
@@ -43,7 +43,7 @@
     text-decoration: none;
     margin-right: 20px;
     color: black;
-    font-family: 'miFuenteRegular';
+    font-family: 'miFuenteRegular', sans-serif;
 }
 .infoProductos{
     display: flex;
@@ -61,7 +61,7 @@
     font-family: 'miFuente';
 }
 .textoInfo p{
-    font-family: 'miFuenteRegular';
+    font-family: 'miFuenteRegular', sans-serif;
 }
 .infoProductos .carrusel{
     border: 1px solid rgb(112, 112, 112);
@@ -108,7 +108,7 @@
 .producto p{
     margin:5px;
     font-size: 14px;
-    font-family: 'miFuenteRegular';
+    font-family: 'miFuenteRegular', sans-serif;
 }
 .carrusel button{
     width: 100px;
