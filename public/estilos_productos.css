@@ -6,12 +6,12 @@
     justify-content: center;
     align-items: top;
     box-sizing: border-box;
-    padding: 10px 5vw;
+    padding: 0px 5vw;
     margin: 0;
+    margin-top: 50px;
     overflow: hidden;
-
 }
-.tituloProductos, .tituloRecetas, .tituloNosotros{
+.tituloProductos{
     width: 100%;
     height: 30px;
     display: flex;
@@ -20,20 +20,27 @@
     align-content: center;
     color: white;
     background-color: rgb(60, 60, 60);
-    padding-block: 20px;
     font-size: 40px;
     font-family: 'Nunito';
     margin: 0;
     text-align: center;
+    padding-block: 15px;
+    border-radius: 50px;
+    margin-bottom: 5px;
 }
 .seccionProductos .buscador{
     width: 100%;
     padding-inline: 20px;
 }
-.buscador h1{
-    margin: 0;
-    font-size: 25px;
-    font-family: 'miFuenteRegular', sans-serif;
+.cuadroBuscar{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1vw;
+}
+.cuadroBuscar button{
+    height: 35px;
+    font-size: 17px;
 }
 .buscador input{
     margin-block: 15px;
@@ -66,8 +73,8 @@
 }
 .infoProductos .carrusel{
     border: 1px solid rgb(112, 112, 112);
-    height: 380px;
-    width: 350px;
+    height: 300px;
+    width: 280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,10 +83,11 @@
     padding: 5px 10px;
 }
 .infoProductos .carrusel img{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
 }
 .elementos{
+    position: relative;
     border: 1px solid rgb(113, 113, 113);
     height: 160px;
     width: 100%;
@@ -113,4 +121,20 @@
 }
 .carrusel button{
     width: 100px;
+}
+.izquierda, .derecha{
+    position: absolute;
+    border: 1px solid gray;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: sans-serif;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+}
+.derecha{
+    left: 0;
+}
+.izquierda{
+    right: 0;
 }

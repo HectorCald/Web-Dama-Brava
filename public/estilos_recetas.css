@@ -1,10 +1,32 @@
 .seccionRecetas{
     width: 100%;
-    padding: 70px 3vw;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    margin-top: 50px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.tituloRecetas{
+    width: 95vw;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+    background-color: rgb(60, 60, 60);
+    font-size: 40px;
+    font-family: 'Nunito';
+    margin: 0;
+    text-align: center;
+    padding-block: 15px;
+    border-radius: 50px;
+    margin-bottom: 10px;
 }
 .recetas{
     width: 100%;
@@ -16,15 +38,18 @@
 }
 .cuadroReceta{
     display: flex;
-    border: 1px solid black;
+    border: 1px solid gray;
     width: 340px;
-    height: auto;
+    height: 170px;
 }
 .cuadroReceta img{
-    width: 150px;
+    width: 170px;
+    height: 170px;
     height: auto;
 }
 .textoReceta{
+    display: flex;
+    flex-direction: column;
     padding: 10px;
 }
 .textoReceta h1{
@@ -35,8 +60,10 @@
     margin: 0;
     font-size: 13px;
 }
-.textoReceta button{
+.textoReceta a{
     margin-top: 10px;
     padding: 7px;
+    width: 60px;
+    text-align: center;
 }
 

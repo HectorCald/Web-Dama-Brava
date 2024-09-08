@@ -1,8 +1,21 @@
 document.addEventListener('DOMContentLoaded', function(){
     desabilitaEnlaces();
     navegacion();
+    secciones();
+    
 })
+function secciones(){
+    const seccionInicio = document.querySelector('.seccionInicio');
+    const seccionProductos = document.querySelector('.seccionProductos');
+    const seccionRecetas = document.querySelector('.seccionRecetas');
+    const seccionNosotros = document.querySelector('.seccionNosotros');
 
+    window.onload = function(){
+        seccionNosotros.style.display = 'none';
+        seccionProductos.style.display = 'none';
+        seccionRecetas.style.display = 'none';
+    }
+}
 function desabilitaEnlaces(){
     const enlaces = document.querySelectorAll('.link');
     enlaces.forEach(function(enlace){
@@ -13,29 +26,41 @@ function desabilitaEnlaces(){
     })
 }
 function navegacion(){
+    const seccionInicio = document.querySelector('.seccionInicio');
+    const seccionProductos = document.querySelector('.seccionProductos');
+    const seccionRecetas = document.querySelector('.seccionRecetas');
+    const seccionNosotros = document.querySelector('.seccionNosotros');
     let links = document.querySelectorAll('.link');
     let seccion;
     links.forEach(element => {
         element.addEventListener('click', function(){
             if(element.textContent==='Productos'){
-                seccion='.tituloProductos';
-                irSeccion(seccion, -50);
-                menu()
+                seccionProductos.style.display = 'flex'
+                seccionNosotros.style.display = 'none';
+                seccionInicio.style.display = 'none';
+                seccionRecetas.style.display = 'none';
+                menu();
             }
             else if(element.textContent==='Recetas'){
-                seccion='.tituloRecetas';
-                irSeccion(seccion, -50);
-                menu()
+                seccionRecetas.style.display = 'flex'
+                seccionNosotros.style.display = 'none';
+                seccionInicio.style.display = 'none';
+                seccionProductos.style.display = 'none';
+                menu();
             }
             else if(element.textContent==='Inicio'){
-                seccion='.inicio';
-                irSeccion(seccion, -50);
-                menu()
+                seccionInicio.style.display = 'flex'
+                seccionNosotros.style.display = 'none';
+                seccionProductos.style.display = 'none';
+                seccionRecetas.style.display = 'none';
+                menu();
             }
             else if(element.textContent==='Nosotros'){
-                seccion='.tituloNosotros';
-                irSeccion(seccion, -50);
-                menu()
+                seccionNosotros.style.display = 'flex'
+                seccionProductos.style.display = 'none';
+                seccionInicio.style.display = 'none';
+                seccionRecetas.style.display = 'none';
+                menu();
             }
         })
     });
@@ -43,19 +68,6 @@ function navegacion(){
 function contacto(){
     window.scrollTo({
         top: document.body.scrollHeight, behavior: 'smooth'
-    });
-}
-function irSeccion(elementId, offset) {
-    return new Promise((resolve) => {
-      const elemento = document.querySelector(elementId);
-      
-      if (elemento) {
-        elemento.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        setTimeout(() => {
-          window.scrollBy(0, offset);
-          resolve();
-        }, 800);
-      }
     });
 }
 function menu(){
@@ -68,4 +80,8 @@ function menu(){
     else{
         imagen.src = './public/Imagenes/menu_open.png';
     }
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
 }
