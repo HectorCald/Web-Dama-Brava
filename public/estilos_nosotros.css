@@ -9,6 +9,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding-block: 10px;
 }
 .tituloNosotros{
     width: 95vw;

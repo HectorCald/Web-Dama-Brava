@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    padding-block: 10px;
 }
 .tituloRecetas{
     width: 95vw;

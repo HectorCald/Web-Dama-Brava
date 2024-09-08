@@ -40,6 +40,10 @@ function navegacion(){
                 seccionInicio.style.display = 'none';
                 seccionRecetas.style.display = 'none';
                 menu();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                })
             }
             else if(element.textContent==='Recetas'){
                 seccionRecetas.style.display = 'flex'
@@ -47,6 +51,10 @@ function navegacion(){
                 seccionInicio.style.display = 'none';
                 seccionProductos.style.display = 'none';
                 menu();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                })
             }
             else if(element.textContent==='Inicio'){
                 seccionInicio.style.display = 'flex'
@@ -54,6 +62,10 @@ function navegacion(){
                 seccionProductos.style.display = 'none';
                 seccionRecetas.style.display = 'none';
                 menu();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                })
             }
             else if(element.textContent==='Nosotros'){
                 seccionNosotros.style.display = 'flex'
@@ -61,6 +73,10 @@ function navegacion(){
                 seccionInicio.style.display = 'none';
                 seccionRecetas.style.display = 'none';
                 menu();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                })
             }
         })
     });
@@ -69,6 +85,7 @@ function contacto(){
     window.scrollTo({
         top: document.body.scrollHeight, behavior: 'smooth'
     });
+    menu()
 }
 function menu(){
     const imagen = document.querySelector('.botonImagen');
@@ -80,8 +97,4 @@ function menu(){
     else{
         imagen.src = './public/Imagenes/menu_open.png';
     }
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    })
 }
