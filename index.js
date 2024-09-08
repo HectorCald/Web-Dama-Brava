@@ -143,6 +143,11 @@ function marcas(){
     
 
     if(window.innerWidth>800){
+            pestañaRecetas.style.backgroundColor = 'white'
+            pestañaNosotros.style.backgroundColor = 'white'
+            pestañaProductos.style.backgroundColor= 'white'
+            pestañaInicio.style.backgroundColor = 'white'
+
         if(seccionInicio.style.display==='flex'){
             pestañaInicio.style.color = 'red'
             pestañaNosotros.style.color = 'black'
@@ -189,6 +194,10 @@ function marcas(){
         }
     }
     else{
+            pestañaInicio.style.textDecoration = 'none'
+            pestañaNosotros.style.textDecoration = 'none'
+            pestañaProductos.style.textDecoration= 'none'
+            pestañaRecetas.style.textDecoration = 'none'
         if(seccionInicio.style.display==='flex'){
             pestañaInicio.style.color = 'white'
             pestañaNosotros.style.color = 'black'
