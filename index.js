@@ -10,6 +10,14 @@ function secciones(){
     const seccionRecetas = document.querySelector('.seccionRecetas');
     const seccionNosotros = document.querySelector('.seccionNosotros');
 
+    const cuadroMenu = document.querySelector('.menu');
+    let secciones = document.querySelectorAll('.seccion');
+
+    secciones.forEach(element => {
+        element.addEventListener('click', function(){
+            cuadroMenu.classList.add('mostrar')
+        })
+    });
     window.onload = function(){
         seccionNosotros.style.display = 'none';
         seccionProductos.style.display = 'none';
