@@ -41,6 +41,10 @@
 .cuadroBuscar button{
     height: 35px;
     font-size: 17px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .buscador input{
     margin-block: 15px;

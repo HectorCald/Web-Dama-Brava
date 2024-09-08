@@ -53,6 +53,9 @@
     color: white;
     z-index: 2;
 }
+.texto a{
+    text-decoration: none;
+}
 
 .inicio h1 {
     font-size: 40px;
