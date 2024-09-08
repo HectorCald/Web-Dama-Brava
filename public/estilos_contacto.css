@@ -23,6 +23,7 @@
 }
 .redesSociales h1, .direccion h1{
     margin: 0;
+    font-family: 'Nunito';
 }
 .textoRedes a{
     color: white;
@@ -30,6 +31,7 @@
 .textoRedes h1{
     font-size: 20px;
     margin: 0;
+    font-family: 'Nunito';
 }
 .red{
     display: flex;
