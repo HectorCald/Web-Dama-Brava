@@ -14,8 +14,15 @@ function secciones(){
     let secciones = document.querySelectorAll('.seccion');
 
     secciones.forEach(element => {
+        const imagen = document.querySelector('.botonImagen');
         element.addEventListener('click', function(){
             cuadroMenu.classList.add('mostrar')
+            if(cuadroMenu.classList.contains('mostrar')){
+                imagen.src = './public/Imagenes/menu_close.png';
+            }
+            else{
+                imagen.src = './public/Imagenes/menu_open.png';
+            }
         })
     });
     window.onload = function(){
