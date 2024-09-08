@@ -99,13 +99,13 @@ body{
         right: 0;
         flex-direction: column;
         background-color: white;
-        gap: 20px;
         justify-content: center;
         align-items: center;
-        padding: 15px 0px;
+        padding: 0px 0px;
         transition: transform 0.5s ease;
-        width: 150px;
+        width: 180px;
         box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.3);
+        gap: 0;
     }
     .mostrar{
         transform: translateX(220px);
@@ -115,24 +115,22 @@ body{
         font-size: 17px;
         font-family:sans-serif;
         color: black;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        padding-block: 10px;
+        text-align: center;
     }
     #hh{
         width: 100%;
     }
-    .botones{
-        background-color: red;
-        font-size: 12px;
-        color: white;
-        padding: 10px;
-        border: none;
-        font-weight: normal;
-        font-family: sans-serif;
+    .botonContacto{
+        font-size: 17px;
     }
     .botonMenu{
         display: flex;
         width: 40px;
         height: 40px;
-        font-size: 0px;
+        font-size: 20px;
         font-family: 'miFuente';
         justify-content: center;
         align-items: center;
