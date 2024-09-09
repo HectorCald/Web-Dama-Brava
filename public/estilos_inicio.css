@@ -19,7 +19,7 @@
     height: auto;
     align-items: center;
     gap: 2vw;
-    padding-block: 8vw;
+    padding: 8vw 4vw;
     box-sizing: border-box;
     overflow: hidden;
     background-image: url('./Imagenes/Imagen\ Principal.jpeg');
@@ -40,13 +40,13 @@
     pointer-events: none;
 }
 .inicio .texto {
-    padding: 20px;
+    padding: 2vw;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    width: 700px;
+    width: auto;
     height: auto;
     gap: 3vw;
     box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
@@ -58,7 +58,7 @@
 }
 
 .inicio h1 {
-    font-size: 40px;
+    font-size: 4.5vw;
     font-family: sans-serif;
     font-weight: normal;
     padding: 0;
@@ -67,30 +67,20 @@
 }
 
 .inicio p {
-    font-size: 20px;
+    font-size: 2.5vw;
     font-family: 'mifuenteRegular', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
 }
-
-.inicio img {
-    height: 350px;
-    width: 400px;
-    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5);
-}
-
-.inicio button {
-    margin: 0;
-    vertical-align: top;
-    width: 100px;
-    font-weight: normal;
-    font-family: 'mifuenteRegular', sans-serif;
-}
-.botonesInicio{
-    display: flex;
-    gap: 1.3vw;
-    flex-wrap: wrap;
+.botonPage{
+    background-color: rgb(207, 43, 43);
+    border: none;
+    color: white;
+    padding: 1vw;
+    font-size: 1vw;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 .inicioProductos{
     display: flex;
@@ -119,18 +109,77 @@
     gap: 4vw;
 }
 .texto1{
-    width: 400px;
+    width: 40vw;
     font-family: sans-serif;
     padding: 3vw;
 }
 .texto1 h1{
-    font-size: 40px;
+    font-size: 4vw;
 }
 .texto1 p{
-    font-size: 17px;
+    font-size: 1.5vw;
 }
 .imagen1{
-    width: 350px;
-    height: 350px;
+    width: 30vw;
+    min-width: 300px;
+    height: 30vw;
+    min-height: 300px;
     box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5);
+}
+@media (max-width: 1200px){
+    .inicio .texto {
+        padding: 2vw;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        width: auto;
+        height: auto;
+        gap: 3vw;
+        box-sizing: border-box; /* Incluye padding y borde en el tamaño total */
+        color: white;
+        z-index: 2;
+    }
+    .texto a{
+        text-decoration: none;
+    }
+    
+    .inicio h1 {
+        font-size: 45px;
+        font-family: sans-serif;
+        font-weight: normal;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .inicio p {
+        font-size: 17px;
+        font-family: 'mifuenteRegular', sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .botonPage{
+        background-color: rgb(207, 43, 43);
+        border: none;
+        color: white;
+        padding: 10px;
+        font-size: 15px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .texto1{
+        width: 300px;
+        font-family: sans-serif;
+        padding: 3vw;
+    }
+    .texto1 h1{
+        font-size: 40px;
+        margin: 5px;
+    }
+    .texto1 p{
+        font-size: 15px;
+    }
 }

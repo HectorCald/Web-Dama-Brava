@@ -62,37 +62,63 @@
     padding-block: 5vw;
 }
 .textoHistoria{
-    padding: 15px;
+    padding: 1vw;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 540px;
+    width: 40vw;
     height: auto;
     box-sizing: border-box;
     padding: 3vw;
 }
 .textoHistoria h1{
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 4vw;
     margin: 0;
 }
 .textoHistoria p{
     font-family: sans-serif;
-    font-size: 17px;
+    font-size: 1.5vw;
     margin: 0;
 }
 .textoHistoria ul{
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 3vw;
 }
 .seccionNosotros img, .seccionNosotros2 img, .seccionNosotros3 img{
-    width: 350px;
-    height: 350px;
+    min-width: 300px;
+    width: 30vw;
+    min-height: 300px;
+    height: 30vw;
     box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5);
 }
-.textoHistoria h1{
-    font-size: 50px;
-    margin: 0;
+@media (max-width: 1200px){
+    .textoHistoria{
+        padding: 1vw;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 300px;
+        height: auto;
+        box-sizing: border-box;
+        padding: 3vw;
+    }
+    .textoHistoria h1{
+        font-family: sans-serif;
+        font-size: 30px;
+        margin: 0;
+    }
+    .textoHistoria p{
+        font-family: sans-serif;
+        font-size: 13px;
+        margin: 0;
+    }
+    .textoHistoria ul{
+        font-family: sans-serif;
+        font-size: 20px;
+    }
 }
