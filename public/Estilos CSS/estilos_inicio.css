@@ -22,7 +22,7 @@
     padding: 8vw 4vw;
     box-sizing: border-box;
     overflow: hidden;
-    background-image: url('./Imagenes/Imagen\ Principal.jpeg');
+    background-image: url('../Imagenes/imgInicio/Imagen\ Principal.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
 }
