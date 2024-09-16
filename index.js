@@ -253,7 +253,7 @@ function marcas(){
 const productos = [
     {
         nombre: 'AJI AMARILLO',
-        imagen: '/public/imagenes2/imgProductos/AJI AMARILLO MOLIDO.webp',
+        imagen: './public/Imagenes2/imgInicio/AJI_AMARILLO_MOLIDO.webp',
         descripcion: 'Dulce, Semi picante, Picante',
         gramaje: '25gr - 200gr - 500gr - 1kl'
     },
