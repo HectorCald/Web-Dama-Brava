@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
     desabilitaEnlaces();
     navegacion();
     secciones();
+    agregarProductos();
 })
 function secciones(){
     const seccionInicio = document.querySelector('.seccionInicio');
@@ -245,3 +246,172 @@ function marcas(){
     }
    
 }
+// Funcion general de la seccion de productos
+const productos = [
+    {
+        nombre: 'AJI AMARILLO',
+        imagen: '',
+        descripcion: 'Dulce, Semi picante, Picante',
+        gramaje: '25gr - 200gr - 500gr - 1kl'
+    },
+    {
+        nombre: 'AJI ROJO',
+        imagen: '',
+        descripcion: 'Dulce, Semi picante, Picante',
+        gramaje: '25gr - 200gr - 500gr - 1kl'
+    },
+    {
+        nombre: 'SEMILLA DE AJÍ',
+        imagen: '',
+        descripcion: 'Semi picante',
+        gramaje: '25gr - 200gr - 500gr - 1kl'
+    },
+    {
+        nombre: 'CÚRCUMA',
+        imagen: '',
+        descripcion: 'SIN DETALLES',
+        gramaje: '25gr'
+    },
+    {
+        nombre: 'AJO',
+        imagen: '',
+        descripcion: 'Molido',
+        gramaje: '30gr'
+    },
+    {
+        nombre: 'CURRY',
+        imagen: '',
+        descripcion: 'Molido',
+        gramaje: '10gr'
+    },
+]
+function agregarProductos() {
+    const container = document.getElementById('productos-container');
+
+    productos.forEach((producto, index) => {
+        const divProducto = document.createElement('div');
+        divProducto.className = 'producto';
+        divProducto.dataset.index = index; // Agregar el índice del producto
+
+        const img = document.createElement('img');
+        img.src = producto.imagen;
+        img.className = 'imagenProducto';
+
+        const p = document.createElement('p');
+        p.textContent = producto.nombre;
+
+        divProducto.appendChild(img);
+        divProducto.appendChild(p);
+
+        container.appendChild(divProducto);
+    });
+}
+function actualizarInfoProducto(index) {
+    const producto = productos[index];
+    document.getElementById('producto-imagen').src = producto.imagen;
+    document.getElementById('producto-nombre').textContent = producto.nombre;
+    document.getElementById('producto-descripcion').textContent = producto.descripcion;
+    document.getElementById('producto-gramaje').textContent = producto.gramaje;
+}
+let productoIndex = 0;
+document.getElementById('productos-container').addEventListener('click', (event) => {
+    if (event.target.closest('.producto')) {
+        const index = parseInt(event.target.closest('.producto').dataset.index);
+        productoIndex = index;
+        actualizarInfoProducto(productoIndex);
+        window.scrollTo({
+            top:0, // Ajusta el desplazamiento para que esté a 100px del top
+            behavior: 'smooth' // Desplazamiento suave
+        });
+        document.getElementById('busquedaInput').value = ''
+    }
+});
+document.getElementById('btn-anterior').addEventListener('click', () => {
+    if (productoIndex > 0) {
+        productoIndex--;
+        actualizarInfoProducto(productoIndex);
+    }
+});
+document.getElementById('btn-siguiente').addEventListener('click', () => {
+    if (productoIndex < productos.length - 1) {
+        productoIndex++;
+        actualizarInfoProducto(productoIndex);
+    }
+});
+
+
+
+
+
+
+const buscador = document.querySelector('.buscador');
+const originalOffsetTop = buscador.offsetTop;
+const barra = document.querySelector('.barraNavegacion');
+const seccionProductos = document.querySelector('.seccionProductos');
+
+function manejarScroll() {
+    const offset = window.scrollY; // La distancia desde el top del documento hasta el top de la ventana
+    const alturaBuscador = originalOffsetTop + buscador.offsetHeight;
+if(seccionProductos.style.display==='flex'){
+    if (offset >= originalOffsetTop - 50) {
+        buscador.classList.remove('fixed');
+        barra.classList.remove('fixedNav')
+    } else {
+        buscador.classList.add('fixed');
+        barra.classList.add('fixedNav')
+    }
+
+    // Para cuando el elemento está fijo y se desplaza hacia abajo
+    if (offset > alturaBuscador - 50) {
+        buscador.classList.add('fixed');
+        barra.classList.add('fixedNav')
+    }
+}
+}
+window.addEventListener('scroll', manejarScroll);
+
+
+
+
+
+
+
+
+
+
+
+document.getElementById('buscarButton').addEventListener('click', function() {
+    const searchTerm = document.getElementById('busquedaInput').value.toLowerCase();
+    const productosContainer = document.querySelectorAll('#productos-container .producto');
+
+    productosContainer.forEach(producto => {
+        const productoNombre = producto.querySelector('p').textContent.toLowerCase();
+        
+        if (productoNombre.includes(searchTerm) || searchTerm === '') {
+            producto.style.display = ''; // Muestra el producto
+        } else {
+            producto.style.display = 'none'; // Oculta el producto
+        }
+    });
+
+    // Desplaza la pantalla para que la div de elementos esté a 100px del top
+    const productosContainerElement = document.getElementById('productos-container');
+    const offsetTop = productosContainerElement.offsetTop;
+
+    window.scrollTo({
+        top: offsetTop - 100, // Ajusta el desplazamiento para que esté a 100px del top
+        behavior: 'smooth' // Desplazamiento suave
+    });
+    document.querySelectorAll('#productos-container .producto').forEach(producto => {
+        producto.addEventListener('click', function() {
+            // Muestra todos los productos
+            document.querySelectorAll('#productos-container .producto').forEach(p => {
+                p.style.display = ''; // Muestra todos los productos
+            });
+            // Limpia el campo de búsqueda y realiza una búsqueda vacía
+            document.getElementById('busquedaInput').value = '';
+            document.getElementById('buscarButton').click(); // Simula clic en buscar
+        });
+    });
+});
+

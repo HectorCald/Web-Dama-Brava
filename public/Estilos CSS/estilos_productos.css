@@ -38,6 +38,20 @@
     align-items: center;
     gap: 1vw;
 }
+.fixed {
+    position: fixed;
+    top: 48px; /* Fija el cuadro a 50px del borde superior */
+    left: 0;
+    right: 0;
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+    background-color: white;
+    padding-block: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+.fixedNav{
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgb(201, 199, 199);
+}
 .cuadroBuscar button{
     height: 35px;
     font-size: 1vw;
@@ -70,7 +84,7 @@
     width: 30vw;
 }
 .textoInfo h1{
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-family:sans-serif;
     margin: 0;
 }
@@ -81,7 +95,7 @@
 .infoProductos .carrusel{
     border: 1px solid rgb(112, 112, 112);
     height: 25vw;
-    width: 22vw;
+    width: 21vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,9 +119,10 @@
     overflow-y: hidden;
     scrollbar-width: none;
     white-space: nowrap;
+    gap: 10px;
 }
 .producto{
-    width: 200px;
+    width: 100px;
     height: 140px;
     display: flex;
     flex-direction: column;
@@ -115,14 +130,14 @@
     align-items: center;
     padding-inline: 10px;
     background-color: rgb(241, 241, 241);
-    margin-right: 10px;
+    gap: 5px;
 }
 .producto img{
     width: 100px;
     height: 100px;
 }
 .producto p{
-    margin:5px;
+    margin: 0;
     font-size: 14px;
     font-family:sans-serif;
 }
@@ -200,7 +215,7 @@
     }
     .textoInfo h1{
         font-family: sans-serif;
-        font-size: 40px;
+        font-size: 35px;
         margin: 0;
     }
     .textoInfo p{
@@ -211,7 +226,7 @@
     .infoProductos .carrusel{
         border: 1px solid rgb(112, 112, 112);
         height: 300px;
-        width: 280px;
+        width: 250px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -235,9 +250,10 @@
         overflow-y: hidden;
         scrollbar-width: none;
         white-space: nowrap;
+        gap: 10px;
     }
     .producto{
-        width: 200px;
+        width: 100px;
         height: 140px;
         display: flex;
         flex-direction: column;
@@ -245,34 +261,18 @@
         align-items: center;
         padding-inline: 10px;
         background-color: rgb(241, 241, 241);
-        margin-right: 10px;
+        gap: 5px;
     }
     .producto img{
         width: 100px;
         height: 100px;
     }
     .producto p{
-        margin:5px;
+        margin: 0;
         font-size: 14px;
-        font-family: 'miFuenteRegular', sans-serif;
+        font-family:sans-serif;
     }
     .carrusel button{
         width: 100px;
-    }
-    .izquierda, .derecha{
-        position: absolute;
-        border: 1px solid gray;
-        border-radius: 50px;
-        font-size: 20px;
-        font-family: sans-serif;
-        width: 50px;
-        height: 50px;
-        font-weight: bold;
-    }
-    .derecha{
-        left: 0;
-    }
-    .izquierda{
-        right: 0;
     }
 }
