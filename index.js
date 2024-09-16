@@ -271,85 +271,85 @@ const productos = [
     },
     {
         nombre: 'CÚRCUMA',
-        imagen: '/public/imagenes2/imgProductos/CURCUMA.webp',
+        imagen: './public/Imagenes2/imgProductos/CURCUMA.webp',
         descripcion: 'SIN DETALLES',
         gramaje: '25gr.'
     },
     {
         nombre: 'AJO',
-        imagen: '/public/imagenes2/imgProductos/AJO.webp',
+        imagen: './public/Imagenes2/imgProductos/AJO.webp',
         descripcion: 'Molido',
         gramaje: '30gr.'
     },
     {
         nombre: 'CURRY',
-        imagen: '/public/imagenes2/imgProductos/CURRY.webp',
+        imagen: './public/Imagenes2/imgProductos/CURRY.webp',
         descripcion: 'Molido',
         gramaje: '10gr.'
     },
     {
         nombre: 'AJI NO MOTO',
-        imagen: '/public/imagenes2/imgProductos/AJI NO MOTO.webp',
+        imagen: './public/Imagenes2/imgProductos/AJI NO MOTO.webp',
         descripcion: 'Molido',
         gramaje: '30gr.'
     },
     {
         nombre: 'JENGIBRE',
-        imagen: '/public/imagenes2/imgProductos/JENGIBRE.webp',
+        imagen: './public/Imagenes2/imgProductos/JENGIBRE.webp',
         descripcion: 'Molido',
         gramaje: '18gr.'
     },
     {
         nombre: 'PIMIENTA ENTERA',
-        imagen: '/public/imagenes2/imgProductos/PIMIENTA ENTERA.webp',
+        imagen: './public/Imagenes2/imgProductos/PIMIENTA ENTERA.webp',
         descripcion: 'Entera (negro)',
         gramaje: '13gr.'
     },
     {
         nombre: 'PIMIENTA MOLIDA',
-        imagen: '/public/imagenes2/imgProductos/PIMIENTA PICANTE MOLIDA.webp',
+        imagen: './public/Imagenes2/imgProductos/PIMIENTA PICANTE MOLIDA.webp',
         descripcion: 'Molido (Negro)',
         gramaje: '18gr.'
     },
     {
         nombre: 'PIMIENTA DULCE',
-        imagen: '/public/imagenes2/imgProductos/PIMIENTA DULCE ENTERA.webp',
+        imagen: './public/Imagenes2/imgProductos/PIMIENTA DULCE ENTERA.webp',
         descripcion: 'Entera (dulce)',
         gramaje: '10gr'
     },
     {
         nombre: 'PIMIENTA DULCE',
-        imagen: '/public/imagenes2/imgProductos/PIMIENTA DULCE MOLIDA.webp',
+        imagen: './public/Imagenes2/imgProductos/PIMIENTA DULCE MOLIDA.webp',
         descripcion: 'Molido (Molida)',
         gramaje: '10gr.'
     },
     {
         nombre: 'PIMIENTA BLANCA',
-        imagen: '/public/imagenes2/imgProductos/PIMIENTA BLANCA MOLIDA.webp',
+        imagen: './public/Imagenes2/imgProductos/PIMIENTA BLANCA MOLIDA.webp',
         descripcion: 'Molido',
         gramaje: '10gr.'
     },
     {
         nombre: 'COMINO ENTERO',
-        imagen: '/public/imagenes2/imgProductos/COMINO.webp',
+        imagen: './public/Imagenes2/imgProductos/COMINO.webp',
         descripcion: 'Entero',
         gramaje: '15gr.'
     },
     {
         nombre: 'COMINO MOLIDO',
-        imagen: '/public/imagenes2/imgProductos/COMINO MOLIDO.webp',
+        imagen: './public/Imagenes2/imgProductos/COMINO MOLIDO.webp',
         descripcion: 'Molido',
         gramaje: '15gr.'
     },
     {
         nombre: 'CILANTRO',
-        imagen: '/public/imagenes2/imgProductos/CILANTRO.webp',
+        imagen: './public/Imagenes2/imgProductos/CILANTRO.webp',
         descripcion: 'Molido',
         gramaje: '25gr.'
     },
     {
         nombre: 'CEBOLLA BLANCA',
-        imagen: '/public/imagenes2/imgProductos/CEBOLLA MOLIDA.webp',
+        imagen: './public/Imagenes2/imgProductos/CEBOLLA MOLIDA.webp',
         descripcion: 'Molido',
         gramaje: '10gr.'
     },
