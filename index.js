@@ -372,14 +372,24 @@ window.addEventListener('scroll', manejarScroll);
 
 
 function adjustZoom() {
-    document.body.style.zoom = '100%';
-    document.getElementById('busquedaInput').addEventListener('focusout', adjustZoom);
+    document.getElementById('busquedaInput').addEventListener('blur', function() {
+        // Desplazamiento para ajustar el zoom
+        window.scrollTo({
+            top: 0,  // Vuelve a la parte superior de la página
+            behavior: 'smooth' // Desplazamiento suave
+        });
+
+        // Ajustar el zoom (esto puede no ser necesario, pero es útil en algunos casos)
+        document.body.style.zoom = 1;
+    });
 }
 
 
 
 //funcuion para filtrar
 document.getElementById('buscarButton').addEventListener('click', function() {
+    
+    adjustZoom();
     
     const searchTerm = document.getElementById('busquedaInput').value.toLowerCase();
     const productosContainer = document.querySelectorAll('#productos-container .producto');
@@ -402,7 +412,7 @@ document.getElementById('buscarButton').addEventListener('click', function() {
         top: offsetTop - 190, // Ajusta el desplazamiento para que esté a 100px del top
         behavior: 'smooth' // Desplazamiento suave
     });
-    adjustZoom();
+    
     document.querySelectorAll('#productos-container .producto').forEach(producto => {
         producto.addEventListener('click', function() {
             // Muestra todos los productos
