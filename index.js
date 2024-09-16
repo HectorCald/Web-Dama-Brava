@@ -19,10 +19,10 @@ function secciones(){
         element.addEventListener('click', function(){
             cuadroMenu.classList.add('mostrar')
             if(cuadroMenu.classList.contains('mostrar')){
-                imagen.src = 'https://cvws.icloud-content.com/B/ATJx2iTP_8QvG6zNRDvgv8QGjhTZAc7xg9Uhr0v2ittKruunb2AMYobG/menu_close.png?o=Ajzw1txPvJ1TsMkt_2Cb1q44cFkX7PkI2dfAfHzvTM0N&v=1&x=3&a=CAogq-VejSDzpaZjF9BMAaVKPVvO90qrwTBSBLUkJ6cFpaISbxC64fOmnTIYur7PqJ0yIgEAUgQGjhTZWgQMYobGaifi3pQDYDnwboqmXTnrBRjEJAoNr0Z5cq_OKoy_PYNcgFUhRcSaraRyJwagV8XNLV-5q8DIZqeZ6VekaDahbrNpadqvddVSmF6YN9Kq9chHlg&e=1725856735&fl=&r=15762d89-dc6a-4295-b6c7-b765254dcbe9-1&k=fnkdQ7yAmWwayhrALi4s8g&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=161&s=hvlvzwMertdOeWeKJ3AyBCFIyQs&cd=i';
+                imagen.src = './public/Imagenes2/imgIconos/menu_close.webp';
             }
             else{
-                imagen.src = 'https://cvws.icloud-content.com/B/Aae73Kqp-5GO_VPMr34doZg872kRAQbjYEGQ3ElOZYD0VhCRMheaEfm_/menu_open.png?o=Ap3OGj1gnoGU1ZYa_QN8cai2IXhuSmaLhiLDALr95tMx&v=1&x=3&a=CAogk-KJlNFa8jE6x7uTXk_wxJ-1uggE494AjFRedfkAJLwSbxCU0famnTIYlK7SqJ0yIgEAUgQ872kRWgSaEfm_aie-67kRISFcVuIXjkY_LlkctBoWxLF-VgIuv0UNWp7kMTORCGcSfZpyJyIGURqGPO-fxGYpPdXNTbyvdYZ_C55tqnecArj2RBwSSOhOTu8Zqg&e=1725856782&fl=&r=1ab93fdc-2b2e-4787-8d18-0c373b57c662-1&k=cf416osjP4hrlOkRfnwwIw&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=161&s=-egtg1V4wbVxvFAxkTzdVOF9HgY&cd=i';
+                imagen.src = './public/Imagenes2/imgIconos/menu_open.webp';
             }
         })
     });
@@ -99,10 +99,10 @@ function menu(){
     const cuadroMenu = document.querySelector('.menu');
     cuadroMenu.classList.toggle('mostrar')
     if(cuadroMenu.classList.contains('mostrar')){
-        imagen.src = 'https://cvws.icloud-content.com/B/ATJx2iTP_8QvG6zNRDvgv8QGjhTZAc7xg9Uhr0v2ittKruunb2AMYobG/menu_close.png?o=Ajzw1txPvJ1TsMkt_2Cb1q44cFkX7PkI2dfAfHzvTM0N&v=1&x=3&a=CAogq-VejSDzpaZjF9BMAaVKPVvO90qrwTBSBLUkJ6cFpaISbxC64fOmnTIYur7PqJ0yIgEAUgQGjhTZWgQMYobGaifi3pQDYDnwboqmXTnrBRjEJAoNr0Z5cq_OKoy_PYNcgFUhRcSaraRyJwagV8XNLV-5q8DIZqeZ6VekaDahbrNpadqvddVSmF6YN9Kq9chHlg&e=1725856735&fl=&r=15762d89-dc6a-4295-b6c7-b765254dcbe9-1&k=fnkdQ7yAmWwayhrALi4s8g&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=161&s=hvlvzwMertdOeWeKJ3AyBCFIyQs&cd=i';
+        imagen.src = './public/Imagenes2/imgIconos/menu_close.webp';
     }
     else{
-        imagen.src = 'https://cvws.icloud-content.com/B/Aae73Kqp-5GO_VPMr34doZg872kRAQbjYEGQ3ElOZYD0VhCRMheaEfm_/menu_open.png?o=Ap3OGj1gnoGU1ZYa_QN8cai2IXhuSmaLhiLDALr95tMx&v=1&x=3&a=CAogk-KJlNFa8jE6x7uTXk_wxJ-1uggE494AjFRedfkAJLwSbxCU0famnTIYlK7SqJ0yIgEAUgQ872kRWgSaEfm_aie-67kRISFcVuIXjkY_LlkctBoWxLF-VgIuv0UNWp7kMTORCGcSfZpyJyIGURqGPO-fxGYpPdXNTbyvdYZ_C55tqnecArj2RBwSSOhOTu8Zqg&e=1725856782&fl=&r=1ab93fdc-2b2e-4787-8d18-0c373b57c662-1&k=cf416osjP4hrlOkRfnwwIw&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=161&s=-egtg1V4wbVxvFAxkTzdVOF9HgY&cd=i';
+        imagen.src = './public/Imagenes2/imgIconos/menu_open.webp';
     }
 }
 function catalogo(){
