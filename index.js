@@ -246,6 +246,9 @@ function marcas(){
     }
    
 }
+// Ajustar el zoom a 100% cuando la página se carga o cuando se oculta el teclado
+
+
 // Funcion general de la seccion de productos
 const productos = [
     {
@@ -368,11 +371,21 @@ if(seccionProductos.style.display==='flex'){
 window.addEventListener('scroll', manejarScroll);
 
 
+function adjustZoom() {
+    document.body.style.zoom = '100%';
+    // Ajustar el zoom al cargar la página
+window.addEventListener('load', adjustZoom);
+
+// Ajustar el zoom al enfocar y desenfocar el campo de entrada
+document.getElementById('busquedaInput').addEventListener('focusout', adjustZoom);
+}
+
 
 
 //funcuion para filtrar
 document.getElementById('buscarButton').addEventListener('click', function() {
     document.body.style.zoom = '100%';
+    adjustZoom();
     const searchTerm = document.getElementById('busquedaInput').value.toLowerCase();
     const productosContainer = document.querySelectorAll('#productos-container .producto');
 
