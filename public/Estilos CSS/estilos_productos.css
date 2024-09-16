@@ -59,6 +59,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
 }
 .buscador input{
     margin-block: 15px;
