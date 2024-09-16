@@ -355,163 +355,163 @@ const productos = [
     },
     {
         nombre: 'LOCOTO',
-        imagen: '/public/imagenes2/imgProductos/LOCOTO MOLIDO.webp',
+        imagen: './public/Imagenes2/imgProductos/LOCOTO MOLIDO.webp',
         descripcion: 'Molido',
         gramaje: '22gr.'
     },
     {
         nombre: 'COLORANTE ROJO',
-        imagen: '/public/imagenes2/imgProductos/COLORANTE ROJO MOLIDO.webp',
+        imagen: './public/Imagenes2/imgProductos/COLORANTE ROJO MOLIDO.webp',
         descripcion: 'Molido',
         gramaje: '45gr.'
     },
     {
         nombre: 'PAPRIKA',
-        imagen: '/public/imagenes2/imgProductos/PAPRIKA.webp',
+        imagen: './public/Imagenes2/imgProductos/PAPRIKA.webp',
         descripcion: 'Pimenton en polvo',
         gramaje: '16gr.'
     },
     {
         nombre: 'PALILLO',
-        imagen: '/public/imagenes2/imgProductos/PALILLO.webp',
+        imagen: './public/Imagenes2/imgProductos/PALILLO.webp',
         descripcion: 'SIN DETALLES',
         gramaje: '20gr.'
     },
     {
         nombre: 'ANÍS',
-        imagen: '/public/imagenes2/imgProductos/ANIS.webp',
+        imagen: './public/Imagenes2/imgProductos/ANIS.webp',
         descripcion: 'Verde',
         gramaje: '18gr.'
     },
     {
         nombre: 'CLAVO DE OLOR',
-        imagen: '/public/imagenes2/imgProductos/CLAVO DE OLOR.webp',
+        imagen: './public/Imagenes2/imgProductos/CLAVO DE OLOR.webp',
         descripcion: 'Entero',
         gramaje: '10gr.'
     },
     {
         nombre: 'CLAVO DE OLOR',
-        imagen: '/public/imagenes2/imgProductos/CLAVO DE OLOR MOLIDO.webp',
+        imagen: './public/Imagenes2/imgProductos/CLAVO DE OLOR MOLIDO.webp',
         descripcion: 'Molido',
         gramaje: '10gr.'
     },
     {
         nombre: 'HOJAS DE LAUREL',
-        imagen: '/public/imagenes2/imgProductos/LAUREL.webp',
+        imagen: './public/Imagenes2/imgProductos/LAUREL.webp',
         descripcion: 'Sin detalles',
         gramaje: '5gr.'
     },
     {
         nombre: 'LAUREL MOLIDO',
-        imagen: '/public/imagenes2/imgProductos/LAUREL DESHIDRATADO.webp',
+        imagen: './public/Imagenes2/imgProductos/LAUREL DESHIDRATADO.webp',
         descripcion: 'Molido',
         gramaje: '8gr.'
     },
     {
         nombre: 'OREGANO MOLIDO',
-        imagen: '/public/imagenes2/imgProductos/OREGANO MOLIDO.webp',
+        imagen: './public/Imagenes2/imgProductos/OREGANO MOLIDO.webp',
         descripcion: 'Molido',
         gramaje: '13gr.'
     },
     {
         nombre: 'OREGANO ENTERO',
-        imagen: '/public/imagenes2/imgProductos/OREGANO.webp',
+        imagen: './public/Imagenes2/imgProductos/OREGANO.webp',
         descripcion: 'Entero',
         gramaje: '16gr.'
     },
     {
         nombre: 'CANELA',
-        imagen: '/public/imagenes2/imgProductos/CANELA.webp',
+        imagen: './public/Imagenes2/imgProductos/CANELA.webp',
         descripcion: 'Entera',
         gramaje: '7gr.'
     },
     {
         nombre: 'CANELA MOLIDA',
-        imagen: '/public/imagenes2/imgProductos/CANELA MOLIDA.webp',
+        imagen: './public/Imagenes2/imgProductos/CANELA MOLIDA.webp',
         descripcion: 'Molido',
         gramaje: '9gr.'
     },
     {
         nombre: 'TOMILLO',
-        imagen: '/public/imagenes2/imgProductos/TOMILLO.webp',
+        imagen: './public/Imagenes2/imgProductos/TOMILLO.webp',
         descripcion: 'Sin detalles',
         gramaje: '10gr.'
     },
     {
         nombre: 'ALBAHACA',
-        imagen: '/public/imagenes2/imgProductos/ALBAHACA.webp',
+        imagen: './public/Imagenes2/imgProductos/ALBAHACA.webp',
         descripcion: 'Molido',
         gramaje: '7gr.'
     },
     {
         nombre: 'ROMERO',
-        imagen: '/public/imagenes2/imgProductos/ROMERO.webp',
+        imagen: './public/Imagenes2/imgProductos/ROMERO_R.webp',
         descripcion: 'Entero',
         gramaje: '16gr.'
     },
     {
         nombre: 'AZAFRÁN',
-        imagen: '/public/imagenes2/imgProductos/AZAFRAN.webp',
+        imagen: './public/Imagenes2/imgProductos/AZAFRAN.webp',
         descripcion: 'Entero',
         gramaje: '1gr.'
     },
     {
         nombre: 'NUEZ MOSCADA',
-        imagen: '/public/imagenes2/imgProductos/NUEZ MOSCADA MOLIDA.webp',
+        imagen: './public/Imagenes2/imgProductos/NUEZ MOSCADA MOLIDA.webp',
         descripcion: 'Molido',
         gramaje: '7gr.'
     },
     {
         nombre: 'NUEZ MOSCADA',
-        imagen: '/public/imagenes2/imgProductos/NUEZ MOSCADA.webp',
+        imagen: './public/Imagenes2/imgProductos/NUEZ MOSCADA.webp',
         descripcion: 'Entera',
         gramaje: '2 Nueces'
     },
     {
         nombre: 'PAN DURO',
-        imagen: '/public/imagenes2/imgProductos/PAN DURO.webp',
+        imagen: './public/Imagenes2/imgProductos/PAN DURO.webp',
         descripcion: 'Molido',
         gramaje: '90gr.'
     },
     {
         nombre: 'COCO RALLADO',
-        imagen: '/public/imagenes2/imgProductos/COCO RALLADO.webp',
+        imagen: './public/Imagenes2/imgProductos/COCO RALLADO.webp',
         descripcion: 'Sin detalles.',
         gramaje: '25gr.'
     },
     {
         nombre: 'ANIS ESTRELLA',
-        imagen: '/public/imagenes2/imgProductos/ANIS ESTRELLADO.webp',
+        imagen: './public/Imagenes2/imgProductos/ANIS ESTRELLADO.webp',
         descripcion: 'Sin detalles.',
         gramaje: '5gr.'
     },
     {
         nombre: 'ABLANDADOR DE CARNE',
-        imagen: '/public/imagenes2/imgProductos/ABLANDADOR DE CARNE.webp',
+        imagen: './public/Imagenes2/imgProductos/ABLANDADOR DE CARNE.webp',
         descripcion: 'Sin detalles.',
         gramaje: '20gr.'
     },
     {
         nombre: 'LINAZA',
-        imagen: '/public/imagenes2/imgProductos/LINAZA.webp',
+        imagen: './public/Imagenes2/imgProductos/LINAZA.webp',
         descripcion: 'Entera',
         gramaje: '50gr.'
     },
     {
         nombre: 'LINAZA MOLIDA',
-        imagen: '/public/imagenes2/imgProductos/LINAZA MOLIDA.webp',
+        imagen: './public/Imagenes2/imgProductos/LINAZA MOLIDA.webp',
         descripcion: 'Molida',
         gramaje: '50gr.'
     },
     {
         nombre: 'PASA DE UVA',
-        imagen: '/public/imagenes2/imgProductos/PASAS.webp',
+        imagen: './public/Imagenes2/imgProductos/PASAS.webp',
         descripcion: 'Sin semilla.',
         gramaje: '25gr.'
     },
     {
         nombre: 'PIPOCA',
-        imagen: '/public/imagenes2/imgProductos/PIPOCA.webp',
+        imagen: './public/Imagenes2/imgProductos/PIPOCA.webp',
         descripcion: 'Sin detalles.',
         gramaje: '90gr.'
     },
