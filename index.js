@@ -380,7 +380,7 @@ document.getElementById('busquedaInput').addEventListener('blur', function() {
     });
 
     // Ajustar el zoom (esto puede no ser necesario, pero es útil en algunos casos)
-    document.body.style.zoom = 1.0;
+    document.body.style.zoom = '100%';
 });
 
 
@@ -411,7 +411,7 @@ document.getElementById('buscarButton').addEventListener('click', function() {
     
     document.querySelectorAll('#productos-container .producto').forEach(producto => {
         producto.addEventListener('click', function() {
-            document.body.style.zoom = 1.0;
+            document.body.style.zoom = '100%';
             // Muestra todos los productos
             document.querySelectorAll('#productos-container .producto').forEach(p => {
                 p.style.display = ''; // Muestra todos los productos
