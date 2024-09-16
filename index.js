@@ -531,7 +531,7 @@ document.getElementById('buscarButton').addEventListener('click', function() {
     const offsetTop = productosContainerElement.offsetTop;
 
     window.scrollTo({
-        top: offsetTop - 190, // Ajusta el desplazamiento para que esté a 100px del top
+        top: offsetTop - 200, // Ajusta el desplazamiento para que esté a 100px del top
         behavior: 'smooth' // Desplazamiento suave
     });
     

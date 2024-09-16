@@ -118,7 +118,7 @@
 .elementos{
     position: relative;
     border: 1px solid rgb(195, 194, 194);
-    height: 160px;
+    height: 150px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -247,7 +247,7 @@
     .elementos{
         position: relative;
         border: 1px solid rgb(195, 194, 194);
-        height: 160px;
+        height: 150px;
         width: 100%;
         display: flex;
         align-items: center;
