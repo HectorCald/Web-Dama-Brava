@@ -253,165 +253,267 @@ function marcas(){
 const productos = [
     {
         nombre: 'AJI AMARILLO',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/AJI AMARILLO MOLIDO.webp',
         descripcion: 'Dulce, Semi picante, Picante',
         gramaje: '25gr - 200gr - 500gr - 1kl'
     },
     {
         nombre: 'AJI ROJO',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/AJI ROJO MOLIDO.webp',
         descripcion: 'Dulce, Semi picante, Picante',
         gramaje: '25gr - 200gr - 500gr - 1kl'
     },
     {
         nombre: 'SEMILLA DE AJÍ',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/SEMILLA DE AJI.webp',
         descripcion: 'Semi picante',
         gramaje: '25gr - 200gr - 500gr - 1kl'
     },
     {
         nombre: 'CÚRCUMA',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/CURCUMA.webp',
         descripcion: 'SIN DETALLES',
-        gramaje: '25gr'
+        gramaje: '25gr.'
     },
     {
         nombre: 'AJO',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/AJO.webp',
         descripcion: 'Molido',
-        gramaje: '30gr'
+        gramaje: '30gr.'
     },
     {
         nombre: 'CURRY',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/CURRY.webp',
         descripcion: 'Molido',
-        gramaje: '10gr'
+        gramaje: '10gr.'
     },
     {
         nombre: 'AJI NO MOTO',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/AJI NO MOTO.webp',
         descripcion: 'Molido',
-        gramaje: '30gr'
+        gramaje: '30gr.'
     },
     {
         nombre: 'JENGIBRE',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/JENGIBRE.webp',
         descripcion: 'Molido',
-        gramaje: '18gr'
+        gramaje: '18gr.'
     },
     {
-        nombre: 'PIMIENTA ENT.',
-        imagen: '',
+        nombre: 'PIMIENTA ENTERA',
+        imagen: './public/imagenes2/imgProductos/PIMIENTA ENTERA.webp',
         descripcion: 'Entera (negro)',
-        gramaje: '13gr'
+        gramaje: '13gr.'
     },
     {
-        nombre: 'PIMIENTA MOL.',
-        imagen: '',
+        nombre: 'PIMIENTA MOLIDA',
+        imagen: './public/imagenes2/imgProductos/PIMIENTA PICANTE MOLIDA.webp',
         descripcion: 'Molido (Negro)',
-        gramaje: '18gr'
+        gramaje: '18gr.'
     },
     {
         nombre: 'PIMIENTA DULCE',
-        imagen: '',
-        descripcion: 'Enetara (dulce)',
+        imagen: './public/imagenes2/imgProductos/PIMIENTA DULCE ENTERA.webp',
+        descripcion: 'Entera (dulce)',
         gramaje: '10gr'
     },
     {
         nombre: 'PIMIENTA DULCE',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/PIMIENTA DULCE MOLIDA.webp',
         descripcion: 'Molido (Molida)',
-        gramaje: '10gr'
+        gramaje: '10gr.'
     },
     {
         nombre: 'PIMIENTA BLANCA',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/PIMIENTA BLANCA MOLIDA.webp',
         descripcion: 'Molido',
-        gramaje: '10gr'
+        gramaje: '10gr.'
     },
     {
         nombre: 'COMINO ENTERO',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/COMINO.webp',
         descripcion: 'Entero',
-        gramaje: '15gr'
+        gramaje: '15gr.'
     },
     {
         nombre: 'COMINO MOLIDO',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/COMINO MOLIDO.webp',
         descripcion: 'Molido',
-        gramaje: '15gr'
+        gramaje: '15gr.'
     },
     {
         nombre: 'CILANTRO',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/CILANTRO.webp',
         descripcion: 'Molido',
-        gramaje: '25gr'
+        gramaje: '25gr.'
     },
     {
         nombre: 'CEBOLLA BLANCA',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/CEBOLLA MOLIDA.webp',
         descripcion: 'Molido',
-        gramaje: '10gr'
+        gramaje: '10gr.'
     },
     {
         nombre: 'LOCOTO',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/LOCOTO MOLIDO.webp',
         descripcion: 'Molido',
-        gramaje: '22gr'
+        gramaje: '22gr.'
     },
     {
         nombre: 'COLORANTE ROJO',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/COLORANTE ROJO MOLIDO.webp',
         descripcion: 'Molido',
-        gramaje: '45gr'
+        gramaje: '45gr.'
     },
     {
         nombre: 'PAPRIKA',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/PAPRIKA.webp',
         descripcion: 'Pimenton en polvo',
-        gramaje: '16gr'
+        gramaje: '16gr.'
     },
     {
         nombre: 'PALILLO',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/PALILLO.webp',
         descripcion: 'SIN DETALLES',
-        gramaje: '20gr'
+        gramaje: '20gr.'
     },
     {
         nombre: 'ANÍS',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/ANIS.webp',
         descripcion: 'Verde',
-        gramaje: '18gr'
+        gramaje: '18gr.'
     },
     {
         nombre: 'CLAVO DE OLOR',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/CLAVO DE OLOR.webp',
         descripcion: 'Entero',
-        gramaje: '10gr'
+        gramaje: '10gr.'
     },
     {
         nombre: 'CLAVO DE OLOR',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/CLAVO DE OLOR MOLIDO.webp',
         descripcion: 'Molido',
-        gramaje: '10gr'
+        gramaje: '10gr.'
     },
     {
         nombre: 'HOJAS DE LAUREL',
-        imagen: '',
+        imagen: './public/imagenes2/imgProductos/LAUREL.webp',
         descripcion: 'Sin detalles',
-        gramaje: '5gr'
+        gramaje: '5gr.'
     },
     {
-        nombre: 'HOJAS DE LAUREL',
-        imagen: '',
+        nombre: 'LAUREL MOLIDO',
+        imagen: './public/imagenes2/imgProductos/LAUREL DESHIDRATADO.webp',
         descripcion: 'Molido',
-        gramaje: '8gr'
+        gramaje: '8gr.'
     },
     {
-        nombre: 'CURRY',
-        imagen: '',
+        nombre: 'OREGANO MOLIDO',
+        imagen: './public/imagenes2/imgProductos/OREGANO MOLIDO.webp',
         descripcion: 'Molido',
-        gramaje: '10gr'
+        gramaje: '13gr.'
+    },
+    {
+        nombre: 'OREGANO ENTERO',
+        imagen: './public/imagenes2/imgProductos/OREGANO.webp',
+        descripcion: 'Entero',
+        gramaje: '16gr.'
+    },
+    {
+        nombre: 'CANELA',
+        imagen: './public/imagenes2/imgProductos/CANELA.webp',
+        descripcion: 'Entera',
+        gramaje: '7gr.'
+    },
+    {
+        nombre: 'CANELA MOLIDA',
+        imagen: './public/imagenes2/imgProductos/CANELA MOLIDA.webp',
+        descripcion: 'Molido',
+        gramaje: '9gr.'
+    },
+    {
+        nombre: 'TOMILLO',
+        imagen: './public/imagenes2/imgProductos/TOMILLO.webp',
+        descripcion: 'Sin detalles',
+        gramaje: '10gr.'
+    },
+    {
+        nombre: 'ALBAHACA',
+        imagen: './public/imagenes2/imgProductos/ALBAHACA.webp',
+        descripcion: 'Molido',
+        gramaje: '7gr.'
+    },
+    {
+        nombre: 'ROMERO',
+        imagen: './public/imagenes2/imgProductos/ROMERO.webp',
+        descripcion: 'Entero',
+        gramaje: '16gr.'
+    },
+    {
+        nombre: 'AZAFRÁN',
+        imagen: './public/imagenes2/imgProductos/AZAFRAN.webp',
+        descripcion: 'Entero',
+        gramaje: '1gr.'
+    },
+    {
+        nombre: 'NUEZ MOSCADA',
+        imagen: './public/imagenes2/imgProductos/NUEZ MOSCADA MOLIDA.webp',
+        descripcion: 'Molido',
+        gramaje: '7gr.'
+    },
+    {
+        nombre: 'NUEZ MOSCADA',
+        imagen: './public/imagenes2/imgProductos/NUEZ MOSCADA.webp',
+        descripcion: 'Entera',
+        gramaje: '2 Nueces'
+    },
+    {
+        nombre: 'PAN DURO',
+        imagen: './public/imagenes2/imgProductos/PAN DURO.webp',
+        descripcion: 'Molido',
+        gramaje: '90gr.'
+    },
+    {
+        nombre: 'COCO RALLADO',
+        imagen: './public/imagenes2/imgProductos/COCO RALLADO.webp',
+        descripcion: 'Sin detalles.',
+        gramaje: '25gr.'
+    },
+    {
+        nombre: 'ANIS ESTRELLA',
+        imagen: './public/imagenes2/imgProductos/ANIS ESTRELLADO.webp',
+        descripcion: 'Sin detalles.',
+        gramaje: '5gr.'
+    },
+    {
+        nombre: 'ABLANDADOR DE CARNE',
+        imagen: './public/imagenes2/imgProductos/ABLANDADOR DE CARNE.webp',
+        descripcion: 'Sin detalles.',
+        gramaje: '20gr.'
+    },
+    {
+        nombre: 'LINAZA',
+        imagen: './public/imagenes2/imgProductos/LINAZA.webp',
+        descripcion: 'Entera',
+        gramaje: '50gr.'
+    },
+    {
+        nombre: 'LINAZA MOLIDA',
+        imagen: './public/imagenes2/imgProductos/LINAZA MOLIDA.webp',
+        descripcion: 'Molida',
+        gramaje: '50gr.'
+    },
+    {
+        nombre: 'PASA DE UVA',
+        imagen: './public/imagenes2/imgProductos/PASAS.webp',
+        descripcion: 'Sin semilla.',
+        gramaje: '25gr.'
+    },
+    {
+        nombre: 'PIPOCA',
+        imagen: './public/imagenes2/imgProductos/PIPOCA.webp',
+        descripcion: 'Sin detalles.',
+        gramaje: '90gr.'
     },
 ]
 function agregarProductos() {
