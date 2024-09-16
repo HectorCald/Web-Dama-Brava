@@ -341,9 +341,6 @@ document.getElementById('btn-siguiente').addEventListener('click', () => {
 
 
 
-
-
-
 const buscador = document.querySelector('.buscador');
 const originalOffsetTop = buscador.offsetTop;
 const barra = document.querySelector('.barraNavegacion');
@@ -373,14 +370,9 @@ window.addEventListener('scroll', manejarScroll);
 
 
 
-
-
-
-
-
-
-
+//funcuion para filtrar
 document.getElementById('buscarButton').addEventListener('click', function() {
+    document.body.style.zoom = '100%';
     const searchTerm = document.getElementById('busquedaInput').value.toLowerCase();
     const productosContainer = document.querySelectorAll('#productos-container .producto');
 
@@ -399,7 +391,7 @@ document.getElementById('buscarButton').addEventListener('click', function() {
     const offsetTop = productosContainerElement.offsetTop;
 
     window.scrollTo({
-        top: offsetTop - 100, // Ajusta el desplazamiento para que esté a 100px del top
+        top: offsetTop - 190, // Ajusta el desplazamiento para que esté a 100px del top
         behavior: 'smooth' // Desplazamiento suave
     });
     document.querySelectorAll('#productos-container .producto').forEach(producto => {
