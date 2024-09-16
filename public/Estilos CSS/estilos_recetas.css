@@ -21,7 +21,7 @@
     color: white;
     background-color: rgb(60, 60, 60);
     font-size: 40px;
-    font-family: 'Nunito';
+    font-family: sans-serif;
     margin: 0;
     text-align: center;
     padding-block: 15px;
@@ -41,21 +41,22 @@
     display: flex;
     border: 1px solid gray;
     width: 28vw;
-    height: 10vw;
+    height: 15vw;
 }
 .cuadroReceta img{
-    width: 10vw;
-    height: 10vw;
+    width: 15vw;
+    height: 15vw;
     height: auto;
 }
 .textoReceta{
     display: flex;
     flex-direction: column;
     padding: 10px;
+    justify-content: space-around;
 }
 .textoReceta h1{
     margin: 0;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
 }
 .textoReceta p{
     margin: 0;
@@ -63,8 +64,8 @@
 }
 .textoReceta a{
     margin-top: 0.5vw;
-    width: 5vw;
-    padding: 0.5vw;
+    width: 6vw;
+    padding: 0.7vw;
     text-align: center;
     text-decoration: none;
 }
@@ -111,7 +112,8 @@
         display: flex;
         border: 1px solid gray;
         width: 340px;
-        height: 170px;
+        height: 180px;
+        justify-content: space-around;
     }
     .cuadroReceta img{
         width: 170px;
@@ -122,20 +124,23 @@
         display: flex;
         flex-direction: column;
         padding: 10px;
+        justify-content: space-around;
     }
     .textoReceta h1{
         margin: 0;
-        font-size: 20px;
+        font-size: 18px;
+        font-weight: bold;
     }
     .textoReceta p{
         margin: 0;
-        font-size: 13px;
+        font-size: 11px;
     }
     .textoReceta a{
         margin-top: 10px;
-        padding: 7px;
-        width: 80px;
+        padding: 7px 0px;
+        width: 90px;
         text-align: center;
         text-decoration: none;
+        font-size: 12px;
     }
 }

@@ -20,7 +20,7 @@
     color: white;
     background-color: rgb(60, 60, 60);
     font-size: 40px;
-    font-family: 'Nunito';
+    font-family: sans-serif;
     margin: 0;
     text-align: center;
     padding-block: 15px;
@@ -68,7 +68,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: 40vw;
+    width: 45vw;
     height: auto;
     box-sizing: border-box;
     padding: 3vw;
@@ -109,12 +109,12 @@
     }
     .textoHistoria h1{
         font-family: sans-serif;
-        font-size: 30px;
+        font-size: 35px;
         margin: 0;
     }
     .textoHistoria p{
         font-family: sans-serif;
-        font-size: 13px;
+        font-size: 15px;
         margin: 0;
     }
     .textoHistoria ul{

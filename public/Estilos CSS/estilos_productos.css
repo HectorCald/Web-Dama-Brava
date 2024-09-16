@@ -21,7 +21,7 @@
     color: white;
     background-color: rgb(60, 60, 60);
     font-size: 40px;
-    font-family: 'Nunito';
+    font-family: sans-serif;
     margin: 0;
     text-align: center;
     padding-block: 15px;
@@ -40,7 +40,7 @@
 }
 .cuadroBuscar button{
     height: 35px;
-    font-size: 17px;
+    font-size: 1vw;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -67,10 +67,10 @@
     gap: 5vw;
 }
 .textoInfo{
-    width: 20vw;
+    width: 30vw;
 }
 .textoInfo h1{
-    font-size: 2.5vw;
+    font-size: 4vw;
     font-family:sans-serif;
     margin: 0;
 }
@@ -125,22 +125,6 @@
     margin:5px;
     font-size: 14px;
     font-family: 'miFuenteRegular', sans-serif;
-}
-.izquierda, .derecha{
-    position: absolute;
-    border: 1px solid gray;
-    border-radius: 50px;
-    font-size: 20px;
-    font-family: sans-serif;
-    width: 50px;
-    height: 50px;
-    font-weight: bold;
-}
-.derecha{
-    left: 0;
-}
-.izquierda{
-    right: 0;
 }
 @media (max-width: 1200px){
     .seccionProductos{
