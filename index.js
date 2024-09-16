@@ -287,6 +287,132 @@ const productos = [
         descripcion: 'Molido',
         gramaje: '10gr'
     },
+    {
+        nombre: 'AJI NO MOTO',
+        imagen: '',
+        descripcion: 'Molido',
+        gramaje: '30gr'
+    },
+    {
+        nombre: 'JENGIBRE',
+        imagen: '',
+        descripcion: 'Molido',
+        gramaje: '18gr'
+    },
+    {
+        nombre: 'PIMIENTA ENT.',
+        imagen: '',
+        descripcion: 'Entera (negro)',
+        gramaje: '13gr'
+    },
+    {
+        nombre: 'PIMIENTA MOL.',
+        imagen: '',
+        descripcion: 'Molido (Negro)',
+        gramaje: '18gr'
+    },
+    {
+        nombre: 'PIMIENTA DULCE',
+        imagen: '',
+        descripcion: 'Enetara (dulce)',
+        gramaje: '10gr'
+    },
+    {
+        nombre: 'PIMIENTA DULCE',
+        imagen: '',
+        descripcion: 'Molido (Molida)',
+        gramaje: '10gr'
+    },
+    {
+        nombre: 'PIMIENTA BLANCA',
+        imagen: '',
+        descripcion: 'Molido',
+        gramaje: '10gr'
+    },
+    {
+        nombre: 'COMINO ENTERO',
+        imagen: '',
+        descripcion: 'Entero',
+        gramaje: '15gr'
+    },
+    {
+        nombre: 'COMINO MOLIDO',
+        imagen: '',
+        descripcion: 'Molido',
+        gramaje: '15gr'
+    },
+    {
+        nombre: 'CILANTRO',
+        imagen: '',
+        descripcion: 'Molido',
+        gramaje: '25gr'
+    },
+    {
+        nombre: 'CEBOLLA BLANCA',
+        imagen: '',
+        descripcion: 'Molido',
+        gramaje: '10gr'
+    },
+    {
+        nombre: 'LOCOTO',
+        imagen: '',
+        descripcion: 'Molido',
+        gramaje: '22gr'
+    },
+    {
+        nombre: 'COLORANTE ROJO',
+        imagen: '',
+        descripcion: 'Molido',
+        gramaje: '45gr'
+    },
+    {
+        nombre: 'PAPRIKA',
+        imagen: '',
+        descripcion: 'Pimenton en polvo',
+        gramaje: '16gr'
+    },
+    {
+        nombre: 'PALILLO',
+        imagen: '',
+        descripcion: 'SIN DETALLES',
+        gramaje: '20gr'
+    },
+    {
+        nombre: 'ANÍS',
+        imagen: '',
+        descripcion: 'Verde',
+        gramaje: '18gr'
+    },
+    {
+        nombre: 'CLAVO DE OLOR',
+        imagen: '',
+        descripcion: 'Entero',
+        gramaje: '10gr'
+    },
+    {
+        nombre: 'CLAVO DE OLOR',
+        imagen: '',
+        descripcion: 'Molido',
+        gramaje: '10gr'
+    },
+    {
+        nombre: 'HOJAS DE LAUREL',
+        imagen: '',
+        descripcion: 'Sin detalles',
+        gramaje: '5gr'
+    },
+    {
+        nombre: 'HOJAS DE LAUREL',
+        imagen: '',
+        descripcion: 'Molido',
+        gramaje: '8gr'
+    },
+    {
+        nombre: 'CURRY',
+        imagen: '',
+        descripcion: 'Molido',
+        gramaje: '10gr'
+    },
 ]
 function agregarProductos() {
     const container = document.getElementById('productos-container');
