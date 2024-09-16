@@ -371,26 +371,22 @@ if(seccionProductos.style.display==='flex'){
 window.addEventListener('scroll', manejarScroll);
 
 
-function adjustZoom() {
-    document.getElementById('busquedaInput').addEventListener('blur', function() {
-        // Desplazamiento para ajustar el zoom
-        window.scrollTo({
-            top: 0,  // Vuelve a la parte superior de la página
-            behavior: 'smooth' // Desplazamiento suave
-        });
 
-        // Ajustar el zoom (esto puede no ser necesario, pero es útil en algunos casos)
-        document.body.style.zoom = 1;
+document.getElementById('busquedaInput').addEventListener('blur', function() {
+    // Desplazamiento para ajustar el zoom
+    window.scrollTo({
+        top: 0,  // Vuelve a la parte superior de la página
+        behavior: 'smooth' // Desplazamiento suave
     });
-}
+
+    // Ajustar el zoom (esto puede no ser necesario, pero es útil en algunos casos)
+    document.body.style.zoom = 1;
+});
 
 
 
 //funcuion para filtrar
 document.getElementById('buscarButton').addEventListener('click', function() {
-    
-    adjustZoom();
-    
     const searchTerm = document.getElementById('busquedaInput').value.toLowerCase();
     const productosContainer = document.querySelectorAll('#productos-container .producto');
 
