@@ -259,7 +259,7 @@ const productos = [
     },
     {
         nombre: 'AJI ROJO',
-        imagen: './public/imagenes2/imgProductos/AJI_ROJO_MOLIDO.webp',
+        imagen: './public/Imagenes2/imgProductos/AJI_ROJO_MOLIDO.webp',
         descripcion: 'Dulce, Semi picante, Picante',
         gramaje: '25gr - 200gr - 500gr - 1kl'
     },
