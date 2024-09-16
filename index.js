@@ -265,7 +265,7 @@ const productos = [
     },
     {
         nombre: 'SEMILLA DE AJÍ',
-        imagen: '/public/imagenes2/imgProductos/SEMILLA DE AJI.webp',
+        imagen: './public/Imagenes2/imgProductos/SEMILLA DE AJI.webp',
         descripcion: 'Semi picante',
         gramaje: '25gr - 200gr - 500gr - 1kl'
     },
