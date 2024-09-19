@@ -252,22 +252,22 @@ function marcas(){
 // Funcion general de la seccion de productos
 const productos = [
     {
-        nombre: 'AJI AMARILLO',
+        nombre: 'AJÍ AMARILLO',
         imagen: './public/Imagenes2/imgInicio/AJI_AMARILLO_MOLIDO.webp',
         descripcion: 'Dulce, Semi picante, Picante',
-        gramaje: '25gr - 200gr - 500gr - 1kl'
+        gramaje: '25gr - 200gr - 500gr - 1kg'
     },
     {
-        nombre: 'AJI ROJO',
+        nombre: 'AJÍ ROJO',
         imagen: './public/Imagenes2/imgProductos/AJI_ROJO_MOLIDO.webp',
         descripcion: 'Dulce, Semi picante, Picante',
-        gramaje: '25gr - 200gr - 500gr - 1kl'
+        gramaje: '25gr - 200gr - 500gr - 1kg'
     },
     {
         nombre: 'SEMILLA DE AJÍ',
         imagen: './public/Imagenes2/imgProductos/SEMILLA DE AJI.webp',
         descripcion: 'Semi picante',
-        gramaje: '25gr - 200gr - 500gr - 1kl'
+        gramaje: '25gr - 200gr - 500gr - 1kg'
     },
     {
         nombre: 'CÚRCUMA',
@@ -288,7 +288,7 @@ const productos = [
         gramaje: '10gr.'
     },
     {
-        nombre: 'AJI NO MOTO',
+        nombre: 'AJÍ NO MOTO',
         imagen: './public/Imagenes2/imgProductos/AJI NO MOTO.webp',
         descripcion: 'Molido',
         gramaje: '30gr.'

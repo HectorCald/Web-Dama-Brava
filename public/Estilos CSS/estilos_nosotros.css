@@ -73,6 +73,10 @@
     box-sizing: border-box;
     padding: 3vw;
 }
+#misionvision{
+    display: flex;
+    gap: 1.1vw;
+}
 .textoHistoria h1{
     font-family: sans-serif;
     font-size: 4vw;
@@ -83,14 +87,15 @@
     font-size: 1.5vw;
     margin: 0;
 }
-.textoHistoria ul{
+.textoHistoria ol{
     font-family: sans-serif;
     font-size: 3vw;
+    margin: 0;
 }
 .seccionNosotros img, .seccionNosotros2 img, .seccionNosotros3 img{
-    min-width: 300px;
+    min-width: 320px;
     width: 30vw;
-    min-height: 300px;
+    min-height: 320px;
     height: 30vw;
     box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.5);
 }
@@ -102,7 +107,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        width: 300px;
+        width: 350px;
         height: auto;
         box-sizing: border-box;
         padding: 3vw;
@@ -117,8 +122,12 @@
         font-size: 15px;
         margin: 0;
     }
-    .textoHistoria ul{
+    .textoHistoria ol{
         font-family: sans-serif;
-        font-size: 20px;
+        font-size: 30px;
+    }
+    #misionvision{
+        display: flex;
+        gap: 15px;
     }
 }

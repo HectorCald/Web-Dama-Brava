@@ -33,9 +33,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2vw;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     margin-block: 2vw;
+    border: 1px solid black;
 }
 .cuadroReceta{
     display: flex;
