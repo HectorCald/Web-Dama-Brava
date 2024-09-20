@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function(){
     navegacion();
     secciones();
     agregarProductos();
+    filtrosList();
+    entradaTexto();
 })
 function secciones(){
     const seccionInicio = document.querySelector('.seccionInicio');
@@ -525,7 +527,58 @@ function adquirir(){
 
     window.open(url, '_blank');
 }
+function filtrosList(){
+    const items = document.querySelectorAll('.item');
+    const titulo = document.getElementById('busquedaInput');
+    const lista = document.querySelector('.filtrosLista');
 
+    titulo.addEventListener('input', () =>{
+        if(titulo.value!==''){
+            lista.style.display = 'flex'
+        }
+        else{
+            lista.style.display = 'none'
+        }
+    })
+    
+    productos.forEach((producto) => {
+        const p = document.createElement('p');
+        p.textContent = producto.nombre;
+        p.className = 'item'
+        lista.appendChild(p);
+        
+    });
+    
+}
+function entradaTexto(){
+        const searchInput = document.getElementById('busquedaInput');
+        const nombres = document.getElementById('nombresProductos').getElementsByTagName('p');
+
+        // Agregar el evento keyup al input para filtrar los nombres
+        searchInput.addEventListener('keyup', function() {
+            let input = searchInput.value.toLowerCase(); // Obtener el valor del input y pasarlo a minúsculas
+            
+            // Recorrer todos los elementos <p>
+            for (let i = 0; i < nombres.length; i++) {
+                // Verificar si el texto del <p> contiene el texto del input
+                if (nombres[i].innerText.toLowerCase().includes(input)) {
+                    nombres[i].classList.remove('hidden'); // Mostrar el elemento <p>
+                } else {
+                    nombres[i].classList.add('hidden'); // Ocultar el elemento <p>
+                }
+            }
+        });
+        const items = document.querySelectorAll('.item');
+        const titulo = document.getElementById('busquedaInput');
+        const lista = document.querySelector('.filtrosLista');
+    
+    items.forEach(item => {
+        item.addEventListener('click', () => {
+        titulo.value = item.textContent;
+        lista.style.display = 'none'
+        });
+    });     
+}
 // Funcion general de la seccion de productos
 
 function agregarProductos() {
@@ -645,6 +698,10 @@ document.getElementById('buscarButton').addEventListener('click', function() {
         top: offsetTop - 200, // Ajusta el desplazamiento para que esté a 100px del top
         behavior: 'smooth' // Desplazamiento suave
     });
+
+    const lista = document.querySelector('.filtrosLista');
+    lista.style.display = 'none'
+
     
     document.querySelectorAll('#productos-container .producto').forEach(producto => {
         producto.addEventListener('click', function() {
