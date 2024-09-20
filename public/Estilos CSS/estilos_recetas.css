@@ -36,7 +36,6 @@
     justify-content: left;
     align-items: center;
     margin-block: 2vw;
-    border: 1px solid black;
 }
 .cuadroReceta{
     display: flex;
