@@ -246,10 +246,6 @@ function marcas(){
     }
    
 }
-// Ajustar el zoom a 100% cuando la página se carga o cuando se oculta el teclado
-
-
-// Funcion general de la seccion de productos
 const productos = [
     {
         nombre: 'AJÍ AMARILLO',
@@ -516,6 +512,22 @@ const productos = [
         gramaje: '90gr.'
     },
 ]
+function adquirir(){
+    const nombre= document.getElementById('producto-nombre').textContent;
+    const descripcion = document.getElementById('producto-descripcion').textContent;
+
+    var mensaje = 'Hola, me interesa adquirir el producto: '+nombre+' '+descripcion;
+
+    var mesajeCod = encodeURIComponent(mensaje);
+    var numero = '59170325449'
+
+    var url = 'https://wa.me/'+numero+'?text='+mesajeCod;
+
+    window.open(url, '_blank');
+}
+
+// Funcion general de la seccion de productos
+
 function agregarProductos() {
     const container = document.getElementById('productos-container');
 
@@ -610,9 +622,6 @@ document.getElementById('busquedaInput').addEventListener('blur', function() {
     // Ajustar el zoom (esto puede no ser necesario, pero es útil en algunos casos)
     document.body.style.zoom = '100%';
 });
-
-
-
 //funcuion para filtrar
 document.getElementById('buscarButton').addEventListener('click', function() {
     const searchTerm = document.getElementById('busquedaInput').value.toLowerCase();
