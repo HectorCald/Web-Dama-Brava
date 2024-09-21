@@ -528,7 +528,7 @@ function adquirir(){
     const nombre= document.getElementById('producto-nombre').textContent;
     const descripcion = document.getElementById('producto-descripcion').textContent;
 
-    var mensaje = 'Hola, me interesa adquirir el producto: '+nombre+' '+descripcion+' podria darme mas informació?';
+    var mensaje = 'Hola, me interesa adquirir el producto: '+nombre+' '+descripcion+' podria darme mas información?';
 
     var mesajeCod = encodeURIComponent(mensaje);
     var numero = '59170325449'

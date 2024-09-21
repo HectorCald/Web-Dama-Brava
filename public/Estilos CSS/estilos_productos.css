@@ -22,7 +22,7 @@
     color: white;
     background-color: rgb(60, 60, 60);
     font-size: 40px;
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
     margin: 0;
     text-align: center;
     padding-block: 15px;
@@ -62,6 +62,7 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    border-radius: 35px;
 }
 #busquedaInput{
     margin-block: 15px;
@@ -81,12 +82,6 @@
     font-family: sans-serif;
     cursor: pointer;
 }
-.buscador .filtros a{
-    text-decoration: none;
-    margin-right: 20px;
-    color: black;
-    font-family:sans-serif;
-}
 .infoProductos{
     display: flex;
     flex-wrap: wrap;
@@ -102,7 +97,7 @@
 }
 .textoInfo h1{
     font-size: 3.5vw;
-    font-family:sans-serif;
+    font-family:'Nunito', sans-serif;
     margin: 0;
 }
 .textoInfo p{
@@ -124,8 +119,15 @@
     width: 20vw;
     height: 20vw ;
 }
+.botonesCarrusel{
+    display: flex;
+    gap: 10px;
+}
+.botonesCarrusel button{
+    border-radius: 50px;
+}
 .tituloTodos{
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: 2vw;
     margin: 0;
     font-weight: bold;
@@ -139,7 +141,7 @@
     flex-wrap: wrap;
     justify-content: left;
     align-items: center;
-    gap: 1vw;
+    gap: 0.8vw;
     width: 90vw;
 }
 .producto {
@@ -149,9 +151,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(255, 255, 255);
     gap: 0.5vw;
     padding: 0 1vw;
+    border: 1px solid rgb(187, 187, 187);
 }
 .producto img{
     width: 10vw;
@@ -159,7 +162,7 @@
 }
 .producto p{
     margin: 0;
-    font-size: 1.2vw;
+    font-size: 1vw;
     font-family:sans-serif;
     text-align: center;
 }
@@ -205,21 +208,9 @@
     display: none;
 }
 @media (max-width: 1200px){
-    .seccionProductos{
-        width: 100%;
-        height: auto;
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: top;
-        box-sizing: border-box;
-        padding: 10px 5vw;
-        margin: 0;
-        margin-top: 50px;
-        overflow: hidden;
-    }
     .cuadroBuscar button{
         height: 35px;
+        border-radius: 35px;
         font-size: 17px;
         text-align: center;
         display: flex;
@@ -240,7 +231,7 @@
         width: 300px;
     }
     .textoInfo h1{
-        font-family: sans-serif;
+        font-family: 'Nunito', sans-serif;
         font-size: 35px;
         margin: 0;
     }
@@ -265,14 +256,11 @@
         height: 250px;
     }
     .tituloTodos{
-        font-family: sans-serif;
+        font-family: 'Nunito', sans-serif;
         font-size: 25px;
         margin: 0;
         margin-block: 15px;
         text-align: center;
-    }
-    .carrusel button{
-        width: 100px;
     }
     .elementos {
         border: 1px solid rgb(195, 194, 194);
@@ -281,7 +269,7 @@
         flex-wrap: wrap;
         justify-content: left;
         align-items: center;
-        gap: 1vw;
+        gap: 0.8vw;
         width: 90vw;
     }
     .producto {
@@ -291,9 +279,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: rgb(241, 241, 241);
+        background-color: white;
         gap: 0.5vw;
         padding: 0 1vw;
+        border: 1px solid rgb(190, 190, 190);
     }
     .producto img{
         width: 13vw;
@@ -314,7 +303,7 @@
         flex-wrap: wrap;
         justify-content: left;
         align-items: center;
-        gap: 10px;
+        gap: 5px;
         width: 350px;
     }
     .producto {
@@ -324,7 +313,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: rgb(241, 241, 241);
+        background-color: white;
         gap: 5px;
         padding: 0 10px;
     }
