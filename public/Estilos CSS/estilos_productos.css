@@ -63,10 +63,23 @@
     align-items: center;
     font-weight: bold;
 }
-.buscador input{
+#busquedaInput{
     margin-block: 15px;
     width: 150px;
     height: 30px;
+    font-size: 16px;
+    transition: font-size 0.3s ease;
+    padding-right: 24px;
+}
+.clearBoton{
+    display: none;
+    position: absolute;
+    left: 160px ;
+    top: 20px;
+    font-size: 20px;
+    color: rgb(193, 193, 193);
+    font-family: sans-serif;
+    cursor: pointer;
 }
 .buscador .filtros a{
     text-decoration: none;
@@ -160,14 +173,29 @@
     background-color: white;
     padding: 20px;
     gap: 5px;
-    width: 150px;
+    width: 200px;
+    height: 400px;
     box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.3);
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 2;
+}
+.filtrosLista::-webkit-scrollbar{
+    width: 5px;
+}
+.filtrosLista::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+.filtrosLista::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 10px;
 }
 .filtrosLista p{
     margin: 0;
     border-bottom: 1px solid rgb(187, 186, 186);
     padding: 5px;
     width: 100%;
+    cursor: pointer;
 }
 .filtrosLista p:hover{
     background-color: rgb(81, 81, 81);

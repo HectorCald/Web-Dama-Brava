@@ -41,22 +41,22 @@
                 <h1>"Da sabor a la vida con nuestros condimentos. ¡Descubre el secreto detrás de cada delicioso plato!"</h1>
                 <p>Más de 50 productos: condimentos, ajíes, especias y hierbas aromáticas. </p>
                 <div class="botonesInicio">
-                    <a class="botonPage" href="./public/catalogo.pdf">CATÁLOGO</a>
+                    <a class="botonPage" href="./public/catalogo.pdf" target="_blank">CATÁLOGO</a>
                     <button class="botonPage" onclick="contacto()">CONTACTO</button>
                 </div>
             </div>
         </div>
         <div class="inicioProductos">
-            <img src="./public/Imagenes2/imgInicio/Imagen1Inicio.webp" class="imagen1">
-            <div class="texto1">
+            <img src="./public/Imagenes2/imgInicio/Imagen1Inicio.webp" class="imagen1 slide-in from-left">
+            <div class="texto1 slide-in from-right">
                 <h1>NUESTROS PRODUCTOS</h1>
                 <p>"Deja que nuestros condimentos transformen tus platos simples en obras maestras culinarias. ¡Haz de cada comida una experiencia extraordinaria!"</p>
                 <button class="botonPage" onclick="botonProductos()">MÁS PRODUCTOS</button>
             </div>
         </div>
         <div class="inicioNosotros">
-            <img src="./public/Imagenes2/imgInicio/imagen2Inicio.webp" alt="" class="imagen1">
-            <div class="texto1">
+            <img src="./public/Imagenes2/imgInicio/imagen2Inicio.webp" alt="" class="imagen1 slide-in from-right">
+            <div class="texto1 slide-in from-left">
                 <h1>NOSOTROS</h1>
                 <p>"Nosotros somos la esencia de la cocina boliviana en cada frasco. Con nuestros condimentos, llevamos el auténtico sabor de Bolivia a tu mesa. Desde los sabores tradicionales hasta las creaciones más innovadoras, cada bocado es un viaje a través de nuestra rica herencia culinaria. Únete a nosotros y descubre cómo nuestras especias transforman tus platos en experiencias inolvidables, elevando tu cocina a nivel nacional."
                 </p>
@@ -66,23 +66,24 @@
     </div>
 <!--Seccion Productos-->
     <div class="seccionProductos seccion">  
-        <h1 class="tituloProductos">PRODUCTOS</h1>
+        <h1 class="tituloProductos animated-title">PRODUCTOS</h1>
         <div class="buscador">
             <div class="cuadroBuscar">
                 <input type="text" class="cuadroBusqueda" placeholder="PRODUCTOS" id="busquedaInput">
-                <button class="botones" id="buscarButton">BUSCAR</button>
+                <button class="botones" id="buscarButton" onclick="botonBuscar()">BUSCAR</button>
+                <span class="clearBoton">x</span>
                 <div class="filtrosLista" id="nombresProductos"></div>
             </div>
         </div>
         <div class="infoProductos">
-            <div class="carrusel">
+            <div class="carrusel slide-in from-left">
                 <img id="producto-imagen" src="./public/Imagenes2/imgProductos/AJI_AMARILLO_MOLIDO.webp" alt="">
                 <div class="botonesCarrusel">
                     <button class="botonPage" id="btn-anterior">ANTERIOR</button>
                     <button class="botonPage" id="btn-siguiente">SIGUIENTE</button>
                 </div>
             </div>
-            <div class="textoInfo">
+            <div class="textoInfo slide-in from-right">
                 <h1 id="producto-nombre">AJÍ AMARILLO</h1>
                 <p id="producto-descripcion">Dulce, Semi-picante, Picante</p>
                 <p>Gramaje: <span id="producto-gramaje">25gr - 200gr - 500gr - 1kg</span></p>
@@ -95,9 +96,9 @@
     </div>
 <!--Seccion Recetas-->
     <div class="seccionRecetas seccion">
-        <h1 class="tituloRecetas">RECETAS</h1>
+        <h1 class="tituloRecetas animated-title">RECETAS</h1>
         <div class="recetas">
-            <div class="cuadroReceta">
+            <div class="cuadroReceta slide-in from-left">
                 <img src="./public/Imagenes2/imgRecetas/picana navideña.webp" alt="">
                 <div class="textoReceta">
                     <h1>Picana navideña</h1>
@@ -105,7 +106,7 @@
                     <a class="botonPage" href="https://www.youtube.com/watch?v=xROwNvds3kw&t=2s" target="_blank">VER VIDEO</a>
                 </div>
             </div>
-            <div class="cuadroReceta">
+            <div class="cuadroReceta slide-in from-right">
                 <img src="./public/Imagenes2/imgRecetas/huminta al horno.webp" alt="">
                 <div class="textoReceta">
                     <h1>Huminta al horno</h1>
@@ -113,7 +114,7 @@
                     <a class="botonPage" href="https://www.youtube.com/watch?v=ONLdhBWNXqg" target="_blank">VER VIDEO</a>
                 </div>
             </div>
-            <div class="cuadroReceta">
+            <div class="cuadroReceta slide-in from-left">
                 <img src="./public/Imagenes2/imgRecetas/falso conejo.webp" alt="">
                 <div class="textoReceta">
                     <h1>Falso conejo</h1>
@@ -121,7 +122,7 @@
                     <a class="botonPage" href="https://www.youtube.com/watch?v=uTbNLR2tnmQ" target="_blank">VER VIDEO</a>
                 </div>
             </div>
-            <div class="cuadroReceta">
+            <div class="cuadroReceta slide-in from-right">
                 <img src="./public/Imagenes2/imgRecetas/mondongo.webp" alt="">
                 <div class="textoReceta">
                     <h1>Mondongo chuquisaqueño</h1>
@@ -129,7 +130,7 @@
                     <a class="botonPage" href="https://www.youtube.com/watch?v=zRSiDOrBZZM" target="_blank">VER VIDEO</a>
                 </div>
             </div>
-            <div class="cuadroReceta">
+            <div class="cuadroReceta slide-in from-left">
                 <img src="./public/Imagenes2/imgRecetas/sajta de pollo.webp" alt="">
                 <div class="textoReceta">
                     <h1>Sajta de pollo</h1>
@@ -137,7 +138,7 @@
                     <a class="botonPage" href="https://www.youtube.com/watch?v=13wfmc0RcwA" target="_blank">VER VIDEO</a>
                 </div>
             </div>
-            <div class="cuadroReceta">
+            <div class="cuadroReceta slide-in from-right">
                 <img src="./public/Imagenes2/imgRecetas/saice.webp" alt="">
                 <div class="textoReceta">
                     <h1>Saice paceño</h1>
@@ -145,7 +146,7 @@
                     <a class="botonPage" href="https://www.youtube.com/watch?v=V6m7yZsAN4s" target="_blank">VER VIDEO</a>
                 </div>
             </div>
-            <div class="cuadroReceta">
+            <div class="cuadroReceta slide-in from-left">
                 <img src="./public/Imagenes2/imgRecetas/picante de pollo.webp" alt="">
                 <div class="textoReceta">
                     <h1>Picante de pollo</h1>
@@ -153,7 +154,7 @@
                     <a class="botonPage" href="https://www.youtube.com/watch?v=taJXCHv0154" target="_blank">VER VIDEO</a>
                 </div>
             </div>
-            <div class="cuadroReceta">
+            <div class="cuadroReceta slide-in from-right">
                 <img src="./public/Imagenes2/imgRecetas/Salsa uchu luru.webp" alt="">
                 <div class="textoReceta">
                     <h1>Salsa uchu luru</h1>
@@ -164,11 +165,11 @@
         </div>
     </div>
 <!--Seccion Nosotros-->
-    <div class="seccionNosotros seccion">
-        <h1 class="tituloNosotros">NOSOTROS</h1>
+    <div class="seccionNosotros seccion">   
+        <h1 class="tituloNosotros animated-title">NOSOTROS</h1>
         <div class="historia">
-            <img src="./public/Imagenes2/imgNosotros/nosotros1.webp" alt="">
-            <div class="textoHistoria">
+            <img src="./public/Imagenes2/imgNosotros/nosotros1.webp" alt="" class="slide-in from-right">
+            <div class="textoHistoria slide-in from-left">
                 <h1>HISTORIA</h1>
                 <p>La historia de DamaBrava inicia con nuestra abuelita “Amapolita”, originaria de Sucre, quien, a sus 60 años de edad, luchaba por su libertad personal y financiera a través de la adquisición de molinos de ají. Posteriormente, siguió este camino nuestro papá y, actualmente, nosotros, con el sueño de que este emprendimiento crezca, decidimos dar el salto de ser “molineros” a “empresa industrial y comercializadora de especias y condimentos”, automatizando y trabajando en cada detalle para garantizar la calidad de nuestros productos, siempre con la meta de mejorar.
                     DamaBrava es una empresa boliviana especialista en el rubro del ají. Nos dedicamos al procesamiento industrial de condimentos, especias, plantas aromáticas y ajíes.
@@ -176,8 +177,8 @@
             </div>
         </div>
         <div class="misionvision">
-            <img src="/public/Imagenes2/imgNosotros/nosotros2.webp" alt="">
-            <div class="textoHistoria" id="misionvision">
+            <img src="./public/Imagenes2/imgNosotros/nosotros2.webp" alt="" class="slide-in from-left">
+            <div class="textoHistoria slide-in from-right" id="misionvision">
                 <div class="mision">
                     <h1>MISIÓN</h1>
                     <p>Brindar excelentes sabores tradicionales de especias y condimentos. Trabajamos para mejorar la calidad de nuestros productos, que marquen la diferencia, contribuyendo a la calidad de vida, a un futuro más saludable y al desarrollo del país.</p>
@@ -190,8 +191,8 @@
             </div>
         </div>
         <div class="valores">
-            <img src="/public/Imagenes2/imgNosotros/nosotros3.webp" alt="">
-            <div class="textoHistoria">
+            <img src="./public/Imagenes2/imgNosotros/nosotros3.webp" alt="" class="slide-in from-right">
+            <div class="textoHistoria slide-in from-left">
                 <h1>VALORES</h1>
                 <ol>
                     <li>Compromiso</li>
@@ -209,7 +210,7 @@
     </div>
     <div class="contactos seccion">
         <div class="redesSociales">
-            <h1>CONTACTO</h1>
+            <h1 class="animated-title">CONTACTO</h1>
             <div class="red">
                 <img src="./public/Imagenes2/imgIconos/Icon-facebook.webp" alt="" class="logoRedes">
                 <div class="textoRedes">
@@ -247,7 +248,7 @@
             </div>
         </div> 
         <div class="direccion">
-            <h1>DIRECCIÓN</h1>
+            <h1 class="animated-title">DIRECCIÓN</h1>
             <p>Planta plazuela Bolivia libre #2, Sucre Bolivia</p>
             <button class="botones">Ir a google maps</button>
         </div>

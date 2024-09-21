@@ -1,11 +1,16 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', () => {
     desabilitaEnlaces();
     navegacion();
     secciones();
     agregarProductos();
     filtrosList();
     entradaTexto();
+    seccionProductos();
+    limpiarInput();
+    aniamcionEntrada();
+    animacionTitle();
 })
+//funciones de navegacion en las paginas
 function secciones(){
     const seccionInicio = document.querySelector('.seccionInicio');
     const seccionProductos = document.querySelector('.seccionProductos');
@@ -89,7 +94,7 @@ function navegacion(){
             })
             
         });
-    }
+}
 function contacto(){
     let links = document.querySelectorAll('.link');
     window.scrollTo({
@@ -107,31 +112,6 @@ function menu(){
     else{
         imagen.src = './public/Imagenes2/imgIconos/menu_open.webp';
     }
-}
-function catalogo(){
-    window.location.href = './public/catalogo.pdf'
-}
-function botonProductos(){
-    const seccionInicio = document.querySelector('.seccionInicio');
-    const seccionProductos = document.querySelector('.seccionProductos');
-    seccionProductos.style.display = 'flex'
-    seccionInicio.style.display = 'none';
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    })
-    marcas();
-}
-function botonNosotros(){
-    const seccionInicio = document.querySelector('.seccionInicio');
-    const seccionNosotros = document.querySelector('.seccionNosotros');
-    seccionNosotros.style.display = 'flex'
-    seccionInicio.style.display = 'none';
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    })
-    marcas();
 }
 function marcas(){
     var seccionInicio = document.querySelector('.seccionInicio');
@@ -248,6 +228,36 @@ function marcas(){
     }
    
 }
+
+//funciones de la seccion inicio
+function catalogo(){
+    window.location.href = './public/catalogo.pdf'
+}
+function botonProductos(){
+    const seccionInicio = document.querySelector('.seccionInicio');
+    const seccionProductos = document.querySelector('.seccionProductos');
+    seccionProductos.style.display = 'flex'
+    seccionInicio.style.display = 'none';
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+    marcas();
+}
+function botonNosotros(){
+    const seccionInicio = document.querySelector('.seccionInicio');
+    const seccionNosotros = document.querySelector('.seccionNosotros');
+    seccionNosotros.style.display = 'flex'
+    seccionInicio.style.display = 'none';
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+    marcas();
+}
+
+
+//funciones de la seccion de Productos
 const productos = [
     {
         nombre: 'AJÍ AMARILLO',
@@ -518,7 +528,7 @@ function adquirir(){
     const nombre= document.getElementById('producto-nombre').textContent;
     const descripcion = document.getElementById('producto-descripcion').textContent;
 
-    var mensaje = 'Hola, me interesa adquirir el producto: '+nombre+' '+descripcion;
+    var mensaje = 'Hola, me interesa adquirir el producto: '+nombre+' '+descripcion+' podria darme mas informació?';
 
     var mesajeCod = encodeURIComponent(mensaje);
     var numero = '59170325449'
@@ -531,7 +541,12 @@ function filtrosList(){
     const items = document.querySelectorAll('.item');
     const titulo = document.getElementById('busquedaInput');
     const lista = document.querySelector('.filtrosLista');
-
+    if(titulo.value!==''){
+        lista.style.display = 'flex'
+    }
+    else{
+        lista.style.display = 'none'
+    }
     titulo.addEventListener('input', () =>{
         if(titulo.value!==''){
             lista.style.display = 'flex'
@@ -546,7 +561,6 @@ function filtrosList(){
         p.textContent = producto.nombre;
         p.className = 'item'
         lista.appendChild(p);
-        
     });
     
 }
@@ -554,7 +568,6 @@ function entradaTexto(){
         const searchInput = document.getElementById('busquedaInput');
         const nombres = document.getElementById('nombresProductos').getElementsByTagName('p');
 
-        // Agregar el evento keyup al input para filtrar los nombres
         searchInput.addEventListener('keyup', function() {
             let input = searchInput.value.toLowerCase(); // Obtener el valor del input y pasarlo a minúsculas
             
@@ -576,11 +589,11 @@ function entradaTexto(){
         item.addEventListener('click', () => {
         titulo.value = item.textContent;
         lista.style.display = 'none'
+        botonBuscar();
+        limpiarInput();
         });
     });     
 }
-// Funcion general de la seccion de productos
-
 function agregarProductos() {
     const container = document.getElementById('productos-container');
 
@@ -608,8 +621,9 @@ function actualizarInfoProducto(index) {
     document.getElementById('producto-nombre').textContent = producto.nombre;
     document.getElementById('producto-descripcion').textContent = producto.descripcion;
     document.getElementById('producto-gramaje').textContent = producto.gramaje;
-}
-let productoIndex = 0;
+}    
+function seccionProductos(){
+    let productoIndex = 0;
 document.getElementById('productos-container').addEventListener('click', (event) => {
     if (event.target.closest('.producto')) {
         const index = parseInt(event.target.closest('.producto').dataset.index);
@@ -621,6 +635,7 @@ document.getElementById('productos-container').addEventListener('click', (event)
         });
         document.getElementById('busquedaInput').value = ''
     }
+    limpiarInput();
 });
 document.getElementById('btn-anterior').addEventListener('click', () => {
     if (productoIndex > 0) {
@@ -676,7 +691,8 @@ document.getElementById('busquedaInput').addEventListener('blur', function() {
     document.body.style.zoom = '100%';
 });
 //funcuion para filtrar
-document.getElementById('buscarButton').addEventListener('click', function() {
+}
+function botonBuscar(){
     const searchTerm = document.getElementById('busquedaInput').value.toLowerCase();
     const productosContainer = document.querySelectorAll('#productos-container .producto');
 
@@ -702,7 +718,7 @@ document.getElementById('buscarButton').addEventListener('click', function() {
     const lista = document.querySelector('.filtrosLista');
     lista.style.display = 'none'
 
-    
+
     document.querySelectorAll('#productos-container .producto').forEach(producto => {
         producto.addEventListener('click', function() {
             document.body.style.zoom = '100%';
@@ -715,5 +731,80 @@ document.getElementById('buscarButton').addEventListener('click', function() {
             document.getElementById('buscarButton').click(); // Simula clic en buscar
         });
     });
-});
+
+}
+function limpiarInput(){
+    const input = document.getElementById('busquedaInput');
+    const boton = document.querySelector('.clearBoton');
+    if(input.value!==''){
+        boton.style.display = 'block';
+    }
+    else{
+        boton.style.display = 'none'
+    }
+    input.addEventListener('input', ()=>{
+        if(input.value!==''){
+            boton.style.display = 'block';
+        }
+        else{
+            boton.style.display = 'none'
+        }
+    });
+    boton.addEventListener('click', ()=>{
+        input.value = '';
+        boton.style.display = 'none';
+        input.focus();
+        const lista = document.querySelector('.filtrosLista');
+        lista.style.display = 'none'
+        botonBuscar();
+    });
+    
+}
+
+//funciones de animaciones
+function aniamcionEntrada(){
+    const elements = document.querySelectorAll('.slide-in');
+
+    const observer = new IntersectionObserver((entries, observer)=>{
+        entries.forEach(entry =>{
+            if(entry.isIntersecting){
+                entry.target.classList.add('visible');
+            }
+            else{
+                entry.target.classList.remove('visible');
+            }
+        });
+    }, {threshold: 0.3});
+    elements.forEach(element=>{
+        observer.observe(element);
+    })
+}
+function animacionTitle(){
+    const titles = document.querySelectorAll('.animated-title');
+    titles.forEach(title =>{
+        const text = title.textContent;
+        title.textContent = '';
+
+        const observer = new IntersectionObserver((entries)=>{
+            entries.forEach(entry =>{
+                let index = 0;
+                title.style.opacity = 1;
+                if(entry.isIntersecting){
+                    const interval = setInterval(()=>{
+                        if(index < text.length){
+                            title.textContent += text[index];
+                            index++;
+                        }
+                        else{
+                            clearInterval(interval);
+                        }
+                    }, 100);
+                    observer.unobserve(title);
+                }
+                
+            });
+        }, {threshold: 0.1});
+        observer.observe(title);
+    });
+}
 
