@@ -55,14 +55,14 @@
     border: 1px solid rgb(195, 194, 194);
 }
 .cuadroBuscar button{
-    height: 35px;
+    height: 45px;
     font-size: 1vw;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    border-radius: 35px;
+    border-radius: 45px;
 }
 #busquedaInput{
     margin-block: 15px;
@@ -135,7 +135,6 @@
     text-align: center;
 }
 .elementos {
-    border: 1px solid rgb(195, 194, 194);
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -209,8 +208,8 @@
 }
 @media (max-width: 1200px){
     .cuadroBuscar button{
-        height: 35px;
-        border-radius: 35px;
+        height: 45px;
+        border-radius: 45px;
         font-size: 17px;
         text-align: center;
         display: flex;
@@ -242,7 +241,7 @@
     }
     .infoProductos .carrusel{
         border: 1px solid rgb(195, 194, 194);
-        height: 300px;
+        height: 315px;
         width: 250px;
         display: flex;
         flex-direction: column;
@@ -263,7 +262,6 @@
         text-align: center;
     }
     .elementos {
-        border: 1px solid rgb(195, 194, 194);
         padding: 10px;
         display: flex;
         flex-wrap: wrap;
@@ -297,7 +295,6 @@
 }
 @media (max-width: 400px){
     .elementos {
-        border: 1px solid rgb(195, 194, 194);
         padding: 10px;
         display: flex;
         flex-wrap: wrap;
